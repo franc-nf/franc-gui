@@ -1,4 +1,4 @@
-[submodule "monero"]
-	path = monero
-	url = https://github.com/monero-project/monero
-	ignore = all
+[submodule "franc"]
+	path = franc
+	url = https://github.com/franc-nf/franc.git
+	branch = release-v0.13
