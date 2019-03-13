@@ -1631,10 +1631,10 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="120"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
         <translation>لحجب اي المدخلات يتم انفاقها في معامله مونيرو يجب الا يتمكن طرف تالت من معرفه اي من المدخلات في المعامله تم انفاقها. القدره علي فعل ذلك تضعف الحمايه التي توفرها توقيعات الطوق.اذا إذا كانت جميع المدخلات ماعدا واحدة قد تم إنفاقها بالفعل ، فإن المدخلات التي يتم إنفاقها بالفعل تصبح ظاهرة ، وبالتالي تبطل أثر توقيعات الطوق وهي واحده من التلات طبقات الرئيسيه لحمايه الخصوصيه التي يوفرها مونيرو.
 لمساعده المعاملات علي تجنب تلك المدخلات  يمكن استخدام قائمة بالأشكال المستنفذة المعروفة لتجنب استخدامها في معاملات جديدة. يتم الاحتفاظ بمثل هذه القائمة من خلال مشروع مونيرو وهو متاح على موقع getmonero.org ويمكنك استيراد هذه القائمه هنا.
-أيضاً يمكنك فحص سلسله الكتل بنفسك ( وسلسله الكتل التي تعيد استخدام مفاتيح مونيرو) بنفسك بإستخدام أداه monero-blockchain-mark-spent-outputs لإنشاء قائمة بالمخرجات المستنفذة المعروفة.</translation>
+أيضاً يمكنك فحص سلسله الكتل بنفسك ( وسلسله الكتل التي تعيد استخدام مفاتيح مونيرو) بنفسك بإستخدام أداه franc-blockchain-mark-spent-outputs لإنشاء قائمة بالمخرجات المستنفذة المعروفة.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="141"/>
@@ -3300,7 +3300,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1909"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <source>New version of franc-wallet-gui is available: %1&lt;br&gt;%2</source>
         <translation>إصدار جديد من واجهه مونيرو الرسويه متاح: %1&lt;br&gt;%2</translation>
     </message>
     <message>

@@ -7,7 +7,7 @@ Copyright (c) 2014-2018, The Monero Project
 - Web: [getmonero.org](https://getmonero.org)
 - Forum: [forum.getmonero.org](https://forum.getmonero.org)
 - Mail: [dev@getmonero.org](mailto:dev@getmonero.org)
-- Github: [https://github.com/monero-project/monero-gui](https://github.com/monero-project/monero-gui)
+- Github: [https://github.com/monero-project/franc-gui](https://github.com/monero-project/franc-gui)
 - IRC: [#monero-dev on Freenode](irc://chat.freenode.net/#monero-dev)
 - Translation platform (Pootle): [translate.getmonero.org](https://translate.getmonero.org)
 
@@ -58,7 +58,7 @@ See [LICENSE](LICENSE).
 
 ## Translations
 
-Do you speak a second language and would like to help translate the Monero GUI? Sign up at [translate.getmonero.org](https://translate.getmonero.org), our localization platform. Navigate to the 'monero-gui' project and find the language you can help with. Suggest changes or add new translated text.
+Do you speak a second language and would like to help translate the Monero GUI? Sign up at [translate.getmonero.org](https://translate.getmonero.org), our localization platform. Navigate to the 'franc-gui' project and find the language you can help with. Suggest changes or add new translated text.
 &nbsp;
 
 If you need help/support or any info you can contact the localization workgroup on the IRC channel #monero-translations (relayed on matrix/riot and MatterMost) or by email at translate[at]getmonero[dot]org. For more info about the Localization workgroup: [github.com/monero-ecosystem/monero-translations](https://github.com/monero-ecosystem/monero-translations)
@@ -67,7 +67,7 @@ If you need help/support or any info you can contact the localization workgroup 
 
 Packages are available for
 
-* Arch Linux via AUR: [monero-wallet-qt](https://aur.archlinux.org/packages/monero-wallet-qt/)
+* Arch Linux via AUR: [franc-wallet-qt](https://aur.archlinux.org/packages/franc-wallet-qt/)
 * Void Linux: xbps-install -S monero-core
 * GuixSD: guix package -i monero-core
 
@@ -116,12 +116,12 @@ Packaging for your favorite distribution would be a welcome contribution!
 
 3. Clone repository
 
-    `git clone https://github.com/monero-project/monero-gui.git`
+    `git clone https://github.com/monero-project/franc-gui.git`
 
 4. Build
 
     ```
-    cd monero-gui
+    cd franc-gui
     QT_SELECT=5 ./build.sh
     ```
 
@@ -161,13 +161,13 @@ The executable can be found in the build/release/bin folder.
 
     This is the directory where Qt 5.x is installed on **your** system
 
-6. Grab an up-to-date copy of the monero-gui repository
+6. Grab an up-to-date copy of the franc-gui repository
 
-  `git clone https://github.com/monero-project/monero-gui.git`
+  `git clone https://github.com/monero-project/franc-gui.git`
 
 7. Go into the repository
 
-  `cd monero-gui`
+  `cd franc-gui`
 
 8. Start the build
 
@@ -227,18 +227,18 @@ The Monero GUI on Windows is 64 bits only; 32-bit Windows GUI builds are not off
 6. Clone repository
 
     ```
-    git clone https://github.com/monero-project/monero-gui.git
+    git clone https://github.com/monero-project/franc-gui.git
     ```
 
 7. Build
 
     ```
-    cd monero-gui
+    cd franc-gui
     source ./build.sh release-static
     cd build
     make deploy
     ```
 
-    **Note:** The use of `source` above is a dirty workaround for a suspected bug in the current QT version 5.11.2-3 available in the MSYS2 packaging system, see https://github.com/monero-project/monero-gui/issues/1559 for more info.
+    **Note:** The use of `source` above is a dirty workaround for a suspected bug in the current QT version 5.11.2-3 available in the MSYS2 packaging system, see https://github.com/monero-project/franc-gui/issues/1559 for more info.
 
 The executable can be found in the `.\release\bin` directory.
