@@ -9,5 +9,7 @@ moc_*
 *.mak
 *.build
 *.xcodeproj
-monero-wallet-gui_plugin_import.cpp
-monero-wallet-gui_qml_plugin_import.cpp
+franc-wallet-gui_plugin_import.cpp
+franc-wallet-gui_qml_plugin_import.cpp
+/.vscode
+.vscode/

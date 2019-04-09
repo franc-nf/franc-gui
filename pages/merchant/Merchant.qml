@@ -450,7 +450,7 @@ Item {
                         font.pixelSize: 14 * scaleRatio
                         font.bold: false
                         color: "white"
-                        text: qsTr("Amount to receive") + " (XMR)"
+                        text: qsTr("Amount to receive") + " (FR)"
                     }
 
                     Image {
@@ -496,7 +496,7 @@ Item {
                     }
 
                     Text {
-                        // @TODO: When we have XMR/USD rate avi. in the future.
+                        // @TODO: When we have FR/USD rate avi. in the future.
                         visible: false
                         font.pixelSize: 14 * scaleRatio
                         font.bold: false

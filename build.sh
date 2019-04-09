@@ -64,7 +64,7 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MONERO_DIR=monero
+MONERO_DIR=franc
 MONEROD_EXEC=monerod
 
 MAKE='make'
@@ -93,7 +93,7 @@ if [ "$ANDROID" != true ] && ([ "$platform" == "linux32" ] || [ "$platform" == "
 fi
 
 if [ "$platform" == "darwin" ]; then
-    BIN_PATH=$BIN_PATH/monero-wallet-gui.app/Contents/MacOS/
+    BIN_PATH=$BIN_PATH/franc-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
     MONEROD_EXEC=monerod.exe
 fi
@@ -111,7 +111,7 @@ if ! QMAKE=$(find_command qmake qmake-qt5); then
     echo "Failed to find suitable qmake command."
     exit 1
 fi
-$QMAKE ../monero-wallet-gui.pro "$CONFIG" || exit
+$QMAKE ../franc-wallet-gui.pro "$CONFIG" || exit
 $MAKE || exit 
 
 # Copy monerod to bin folder

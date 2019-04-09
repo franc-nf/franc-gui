@@ -45,7 +45,7 @@ import "js/Windows.js" as Windows
 
 ApplicationWindow {
     id: appWindow
-    title: "Monero"
+    title: "Franc"
 
     property var currentItem
     property bool hideBalanceForced: false
@@ -625,7 +625,7 @@ ApplicationWindow {
 
     function onWalletMoneySent(txId, amount) {
         // refresh transaction history here
-        console.log("monero sent found")
+        console.log("franc sent found")
         currentWallet.refresh()
         currentWallet.history.refresh(currentWallet.currentSubaddressAccount) // this will refresh model
     }
@@ -837,7 +837,7 @@ ApplicationWindow {
                     txid_text += ", "
                 txid_text += txid[i]
             }
-            informationPopup.text  = (viewOnly)? qsTr("Transaction saved to file: %1").arg(path) : qsTr("Monero sent successfully: %1 transaction(s) ").arg(txid.length) + txid_text + translationManager.emptyString
+            informationPopup.text  = (viewOnly)? qsTr("Transaction saved to file: %1").arg(path) : qsTr("Franc sent successfully: %1 transaction(s) ").arg(txid.length) + txid_text + translationManager.emptyString
             informationPopup.icon  = StandardIcon.Information
             if (transactionDescription.length > 0) {
                 for (var i = 0; i < txid.length; ++i)
@@ -907,10 +907,10 @@ ApplicationWindow {
                 informationPopup.icon = StandardIcon.Critical;
             } else if (received > 0) {
                 if (in_pool) {
-                    informationPopup.text = qsTr("This address received %1 monero, but the transaction is not yet mined").arg(walletManager.displayAmount(received));
+                    informationPopup.text = qsTr("This address received %1 franc, but the transaction is not yet mined").arg(walletManager.displayAmount(received));
                 }
                 else {
-                    informationPopup.text = qsTr("This address received %1 monero, with %2 confirmation(s).").arg(walletManager.displayAmount(received)).arg(confirmations);
+                    informationPopup.text = qsTr("This address received %1 franc, with %2 confirmation(s).").arg(walletManager.displayAmount(received)).arg(confirmations);
                 }
             }
             else {
@@ -1325,7 +1325,7 @@ ApplicationWindow {
                 PropertyChanges { target: titleBar; basicButtonVisible: false }
                 PropertyChanges { target: titleBar; showMaximizeButton: true }
                 PropertyChanges { target: titleBar; visible: true }
-                PropertyChanges { target: titleBar; title: qsTr("Monero") + translationManager.emptyString }
+                PropertyChanges { target: titleBar; title: qsTr("Franc") + translationManager.emptyString }
             }, State {
                 name: "normal"
                 PropertyChanges { target: leftPanel; visible: (isMobile)? false : true }
@@ -1340,7 +1340,7 @@ ApplicationWindow {
 //                PropertyChanges { target: frameArea; blocked: true }
                 PropertyChanges { target: titleBar; visible: true }
 //                PropertyChanges { target: titleBar; y: 0 }
-                PropertyChanges { target: titleBar; title: qsTr("Monero") + translationManager.emptyString }
+                PropertyChanges { target: titleBar; title: qsTr("Franc") + translationManager.emptyString }
                 PropertyChanges { target: mobileHeader; visible: isMobile ? true : false }
             }
         ]
@@ -1906,7 +1906,7 @@ ApplicationWindow {
           var hash = parts[1]
           var user_url = parts[2]
           var auto_url = parts[3]
-          var msg = qsTr("New version of monero-wallet-gui is available: %1<br>%2").arg(version).arg(user_url) + translationManager.emptyString
+          var msg = qsTr("New version of franc-wallet-gui is available: %1<br>%2").arg(version).arg(user_url) + translationManager.emptyString
           notifier.show(msg)
         }
         else {
@@ -1915,7 +1915,7 @@ ApplicationWindow {
     }
 
     function checkUpdates() {
-        walletManager.checkUpdatesAsync("monero-gui", "gui")
+        walletManager.checkUpdatesAsync("franc-gui", "gui")
     }
 
     Timer {
