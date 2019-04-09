@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2019, The Monero Project
 // 
 // All rights reserved.
 // 
@@ -230,7 +230,7 @@ Rectangle{
                     textMargin: 0
                     leftPadding: 0
                     topPadding: 0
-                    text: qsTr("Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.") + translationManager.emptyString
+                    text: qsTr("Uses a third-party server to connect to the Franc network. Less secure, but easier on your computer.") + translationManager.emptyString
                     width: parent.width - (remoteNodeIcon.width + remoteNodeIcon.anchors.leftMargin + anchors.leftMargin)
                     readOnly: true
 
@@ -276,7 +276,7 @@ Rectangle{
             MoneroComponents.WarningBox {
                 Layout.topMargin: 26 * scaleRatio
                 Layout.bottomMargin: 6 * scaleRatio
-                text: qsTr("To find a remote node, type 'Monero remote node' into your favorite search engine. Please ensure the node is run by a trusted third-party.") + translationManager.emptyString
+                text: qsTr("To find a remote node, type 'Franc remote node' into your favorite search engine. Please ensure the node is run by a trusted third-party.") + translationManager.emptyString
             }
 
             MoneroComponents.RemoteNodeEdit {
@@ -301,6 +301,7 @@ Rectangle{
                     console.log("setting remote node to " + persistentSettings.remoteNodeAddress);
                     if (persistentSettings.is_trusted_daemon) {
                         persistentSettings.is_trusted_daemon = !persistentSettings.is_trusted_daemon
+                        currentWallet.setTrustedDaemon(persistentSettings.is_trusted_daemon)
                         setTrustedDaemonCheckBox.checked = !setTrustedDaemonCheckBox.checked
                         appWindow.showStatusMessage(qsTr("Remote node updated. Trusted daemon has been reset. Mark again, if desired."), 8);
                     }

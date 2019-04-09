@@ -47,7 +47,7 @@ Rectangle {
     ListModel {
         id: deviceNameModel
         ListElement { column1: qsTr("Ledger") ; column2: "Ledger"; }
-//        ListElement { column1: qsTr("Trezor") ; column2: "Trezor"; }
+        ListElement { column1: qsTr("Trezor") ; column2: "Trezor"; }
     }
 
     function update(){
@@ -111,12 +111,11 @@ Rectangle {
                 }
             }
 
-            GridLayout {
+            ColumnLayout {
                 Layout.topMargin: 10 * scaleRatio
                 Layout.fillWidth: true
 
-                columnSpacing: 20 * scaleRatio
-                columns: 2
+                spacing: 20 * scaleRatio
 
                 MoneroComponents.LineEdit {
                     id: restoreHeight
@@ -149,6 +148,7 @@ Rectangle {
 
                 Layout.topMargin: 10 * scaleRatio
                 Layout.fillWidth: true
+                z: 3
 
                 ColumnLayout{
                     MoneroComponents.StandardDropdown {
@@ -208,13 +208,9 @@ Rectangle {
                         }
                         wizardController.walletOptionsRestoreHeight = _restoreHeight;
                     }
-                    var written = wizardController.createWalletFromDevice();
-                    if(written){
-                        wizardController.walletOptionsIsRecoveringFromDevice = true;
-                        wizardStateView.state = "wizardCreateWallet2";
-                    } else {
-                        errorMsg.text = qsTr("Error writing wallet from hardware device. Check application logs.") + translationManager.emptyString;
-                    }
+
+                    wizardController.walletCreatedFromDevice.connect(onCreateWalletFromDeviceCompleted);
+                    wizardController.createWalletFromDevice();
                 }
             }
         }
@@ -230,5 +226,14 @@ Rectangle {
         if(previousView.viewName == "wizardHome"){
             walletInput.reset();
         }
+    }
+
+    function onCreateWalletFromDeviceCompleted(written){
+        if(written){
+            wizardStateView.state = "wizardCreateWallet2";
+        } else {
+            errorMsg.text = qsTr("Error writing wallet from hardware device. Check application logs.") + translationManager.emptyString;
+        }
+        wizardController.walletCreatedFromDevice.disconnect(onCreateWalletFromDeviceCompleted);
     }
 }

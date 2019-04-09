@@ -488,13 +488,13 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="62"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>AVISO: Não reutilize as suas chaves privadas do Monero noutro fork, A MENOS que este fork preveja proteções contra a reutilização de chaves. Se o fizer estará a pôr em risco a sua privacidade.</translation>
+        <source>WARNING: Do not reuse your Franc keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>AVISO: Não reutilize as suas chaves privadas do Franc noutro fork, A MENOS que este fork preveja proteções contra a reutilização de chaves. Se o fizer estará a pôr em risco a sua privacidade.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="85"/>
-        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Monero. Please write down your seed manually.</source>
-        <translation>AVISO: Copiar a seed para a área de transferência pode criar exposição a software malicioso, que pode gravar a seed e roubar o seu Monero. Por favor escreva a seed manualmente.</translation>
+        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Franc. Please write down your seed manually.</source>
+        <translation>AVISO: Copiar a seed para a área de transferência pode criar exposição a software malicioso, que pode gravar a seed e roubar o seu Franc. Por favor escreva a seed manualmente.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="159"/>
@@ -881,8 +881,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="72"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Minerar com o seu computador ajuda a fortalecer a rede Monero. Quanto mais pessoas minerarem, mais difícil será atacar a rede e por mais pequena que seja a sua contribuição está a ajudar. &lt;br&gt; &lt;br&gt;Minerar também dá uma pequena possibilidade de ganhar Monero. O seu computador irá criar hashes procurando soluções para validade blocos. Caso consiga encontrar o hash de validação de um bloco, você ganha a recompensa associada. Boa sorte!</translation>
+        <source>Mining with your computer helps strengthen the Franc network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Franc. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Minerar com o seu computador ajuda a fortalecer a rede Franc. Quanto mais pessoas minerarem, mais difícil será atacar a rede e por mais pequena que seja a sua contribuição está a ajudar. &lt;br&gt; &lt;br&gt;Minerar também dá uma pequena possibilidade de ganhar Franc. O seu computador irá criar hashes procurando soluções para validade blocos. Caso consiga encontrar o hash de validação de um bloco, você ganha a recompensa associada. Boa sorte!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="93"/>
@@ -1241,8 +1241,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="97"/>
-        <source>Embedded Monero version: </source>
-        <translation>Versão Monero: </translation>
+        <source>Embedded Franc version: </source>
+        <translation>Versão Franc: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="126"/>
@@ -1359,7 +1359,7 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="171"/>
         <source>Change language</source>
-        <translation type="unfinished">Alterar idioma</translation>
+        <translation>Alterar idioma</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="183"/>
@@ -1404,13 +1404,13 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="233"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Utiliza um servidor remoto para ligar à rede Monero. É um método menos seguro, mas necessita de menos espaço de armazenamento local.</translation>
+        <source>Uses a third-party server to connect to the Franc network. Less secure, but easier on your computer.</source>
+        <translation>Utiliza um servidor remoto para ligar à rede Franc. É um método menos seguro, mas necessita de menos espaço de armazenamento local.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="279"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Para encontrar um node remoto, escreva &apos;node remoto de Monero&apos; no seu motor de busca favorito. Confirme sempre que o node é gerido por uma entidade confiável.</translation>
+        <source>To find a remote node, type &apos;Franc remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Para encontrar um node remoto, escreva &apos;node remoto de Franc&apos; no seu motor de busca favorito. Confirme sempre que o node é gerido por uma entidade confiável.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="293"/>
@@ -1524,7 +1524,7 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="183"/>
         <source>Success</source>
-        <translation type="unfinished">Sucesso</translation>
+        <translation>Sucesso</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="184"/>
@@ -1615,8 +1615,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="104"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Esta secção permite-lhe interagir com a base de dados de rings. Esta base de dados é intencionada para a utilização de carteiras de Monero assim como carteiras de clones do Monero que usam as mesmas chaves.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Franc wallets as well as wallets from Franc clones which reuse the Franc keys.</source>
+        <translation>Esta secção permite-lhe interagir com a base de dados de rings. Esta base de dados é intencionada para a utilização de carteiras de Franc assim como carteiras de clones do Franc que usam as mesmas chaves.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="117"/>
@@ -1632,8 +1632,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="120"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>De forma a esconder qual é a verdadeira transação que está a ser gasta, Monero utiliza varias transacções selecionadas automaticamente na mesma transação, uma terceira pessoa não deve conseguir distinguir qual é a transação verdadeira das falsas. Caso o consiga fazer irá enfraquecer a a protecção dada pelas ring signatures. Se todas as transacções excepto uma forem conhecidas por já terem sido gastas, então torna-se evidente qual é a transação que está a ser gasta e a utilização de ring signatures fica sem efeito, sendo as ring signatures uma das 3 camadas que permite a protecção de privacidade em Monero.&lt;br&gt;Para ajudar a evitar essas transacções, é-lhe fornecida uma lista com transacções já conhecidas como gastas e assim pode evitar usa-las numa nova transação. Esta lista é mantida pelo Monero Project e está disponivel no site oficinal getmonero.org, e pode importar essa lista para aqui.&lt;br&gt;Em alternativa, pode utilizar a ferramenta franc-blockchain-mark-spent-outputs e criar essa mesma lista de transacções conhecidas como gastas.</translation>
+        <source>In order to obscure which inputs in a Franc transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Franc uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Franc project and is available on the franc-nf.fr website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Franc clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>De forma a esconder qual é a verdadeira transação que está a ser gasta, Franc utiliza varias transacções selecionadas automaticamente na mesma transação, uma terceira pessoa não deve conseguir distinguir qual é a transação verdadeira das falsas. Caso o consiga fazer irá enfraquecer a a protecção dada pelas ring signatures. Se todas as transacções excepto uma forem conhecidas por já terem sido gastas, então torna-se evidente qual é a transação que está a ser gasta e a utilização de ring signatures fica sem efeito, sendo as ring signatures uma das 3 camadas que permite a protecção de privacidade em Franc.&lt;br&gt;Para ajudar a evitar essas transacções, é-lhe fornecida uma lista com transacções já conhecidas como gastas e assim pode evitar usa-las numa nova transação. Esta lista é mantida pelo Franc Project e está disponivel no site oficinal franc-nf.fr, e pode importar essa lista para aqui.&lt;br&gt;Em alternativa, pode utilizar a ferramenta franc-blockchain-mark-spent-outputs e criar essa mesma lista de transacções conhecidas como gastas.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="141"/>
@@ -1703,13 +1703,13 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="257"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Para evitar anular a proteção oferecida pelo Monero, um output não deve ser usado com diferentes rings em blockchains diferentes. Normalmente isto não é uma preocupação, poderá tornar-se uma quando um clone do Monero permite a utilização de outputs já gastos na rede original do Monero. Neste caso é necessário que garante que estes outputs que já tinham sido gastos na rede Monero usem os mesmos rings em ambas as blockchains.&lt;br&gt;Isto é feito automaticamente pelo Monero e por qualquer outro software que não está a tentar destruir a sua provacidade.&lt;br&gt;Se você está a utilizar um clone de Monero e este clone não inclui uma proteção contra isto, poderá obter na mesma a sua proteção garantido que as transações são feitas primeiro no clone do Monero e de seguida adicionado a ring utilizada nesta página, o que permite que depois utilize o seu Monero em segurança.&lt;br&gt;Se você optar por não usar um clone do Monero então não necessita de se preocupar, tudo será feito automaticamente.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Franc&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Franc clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Franc and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Franc clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Franc safely.&lt;br&gt;If you do not use a key-reusing Franc clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Para evitar anular a proteção oferecida pelo Franc, um output não deve ser usado com diferentes rings em blockchains diferentes. Normalmente isto não é uma preocupação, poderá tornar-se uma quando um clone do Franc permite a utilização de outputs já gastos na rede original do Franc. Neste caso é necessário que garante que estes outputs que já tinham sido gastos na rede Franc usem os mesmos rings em ambas as blockchains.&lt;br&gt;Isto é feito automaticamente pelo Franc e por qualquer outro software que não está a tentar destruir a sua provacidade.&lt;br&gt;Se você está a utilizar um clone de Franc e este clone não inclui uma proteção contra isto, poderá obter na mesma a sua proteção garantido que as transações são feitas primeiro no clone do Franc e de seguida adicionado a ring utilizada nesta página, o que permite que depois utilize o seu Franc em segurança.&lt;br&gt;Se você optar por não usar um clone do Franc então não necessita de se preocupar, tudo será feito automaticamente.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="279"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Estes registos contêm assinaturas usadas em transacções num clone do Monero com as mesmas chaves, é necessário utilizar as mesmas assinaturas para evitar perda de privacidade.</translation>
+        <source>This records rings used by outputs spent on Franc on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Estes registos contêm assinaturas usadas em transacções num clone do Franc com as mesmas chaves, é necessário utilizar as mesmas assinaturas para evitar perda de privacidade.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="290"/>
@@ -1893,8 +1893,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="337"/>
-        <source>Enter the Monero Address (example: 44AFFq5kSiGBoZ...)</source>
-        <translation>Introduza o Endereço de Monero (exemplo: 44AFFq5kSiGBoZ...)</translation>
+        <source>Enter the Franc Address (example: 44AFFq5kSiGBoZ...)</source>
+        <translation>Introduza o Endereço de Franc (exemplo: 44AFFq5kSiGBoZ...)</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="348"/>
@@ -2118,8 +2118,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="616"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero enviado com sucesso</translation>
+        <source>Franc sent successfully</source>
+        <translation>Franc enviado com sucesso</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="463"/>
@@ -2285,7 +2285,8 @@ Por favor atualize ou execute outra versão do daemon</translation>
         <source>Payment ID &lt;font size=&apos;2&apos;&gt;( Optional )&lt;/font&gt;</source>
         <translation>ID do Pagamento &lt;font size=&apos;2&apos;&gt;( Opcional )&lt;/font&gt;</translation>
     </message>
-</context>
+<message><source></source><translation></translation>
+    <location filename="../pages/Transfer.qml" line="91"/></message></context>
 <context>
     <name>TxKey</name>
     <message>
@@ -2371,6 +2372,70 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
         <location filename="../pages/TxKey.qml" line="199"/>
         <source>Check</source>
         <translation>Verificar</translation>
+    </message>
+</context>
+<context>
+    <name>Utils</name>
+    <message>
+        <location filename="../js/Utils.js" line="42"/>
+        <source>Wrong password</source>
+        <translation>Palavra-chave incorreta</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="61"/>
+        <source>second ago</source>
+        <translation>segundo atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="63"/>
+        <source>seconds ago</source>
+        <translation>segundos atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="67"/>
+        <source>minute ago</source>
+        <translation>minuto atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="69"/>
+        <source>minutes ago</source>
+        <translation>minutos atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="73"/>
+        <source>hour ago</source>
+        <translation>hora atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="75"/>
+        <source>hours ago</source>
+        <translation>horas atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="79"/>
+        <location filename="../js/Utils.js" line="83"/>
+        <source>day ago</source>
+        <translation>dia atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="85"/>
+        <source>days ago</source>
+        <translation>dias atrás</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Testnet</source>
+        <translation>Testnet</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Stagenet</source>
+        <translation>Stagenet</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Mainnet</source>
+        <translation>Mainnet</translation>
     </message>
 </context>
 <context>
@@ -2460,12 +2525,12 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="125"/>
         <source>Wallet creation date as `YYYY-MM-DD` or restore height</source>
-        <translation type="unfinished">Data de criação da carteira como `AAAA-MM-DD` ou restaurar a partir de número de bloco</translation>
+        <translation>Data de criação da carteira como `AAAA-MM-DD` ou restaurar a partir de número de bloco</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="128"/>
         <source>Restore height</source>
-        <translation type="unfinished">Restaurar a partir de número de bloco</translation>
+        <translation>Restaurar a partir de número de bloco</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="139"/>
@@ -2527,7 +2592,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardCreateWallet2.qml" line="78"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Erro a obter nodes remotos a partir de servidor.</translation>
     </message>
 </context>
 <context>
@@ -2539,8 +2604,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="58"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.</source>
-        <translation>Para poder comunicar com a rede Monero, a carteira necessita de estar conectada a um node Monero. Para a melhor privacidade é recomendado correr o seu próprio node.</translation>
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.</source>
+        <translation>Para poder comunicar com a rede Franc, a carteira necessita de estar conectada a um node Franc. Para a melhor privacidade é recomendado correr o seu próprio node.</translation>
     </message>
 </context>
 <context>
@@ -2590,7 +2655,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="120"/>
-        <source>Additionally, you may specify a bootstrap node to use Monero immediately.</source>
+        <source>Additionally, you may specify a bootstrap node to use Franc immediately.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2603,8 +2668,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardHome</name>
     <message>
         <location filename="../wizard/WizardHome.qml" line="60"/>
-        <source>Welcome to Monero.</source>
-        <translation>Bem-vindo(a) ao Monero.</translation>
+        <source>Welcome to Franc.</source>
+        <translation>Bem-vindo(a) ao Franc.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="65"/>
@@ -2613,8 +2678,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="66"/>
-        <source>Choose this option if this is your first time using Monero.</source>
-        <translation>Escolha esta opção se esta é a sua primeira vez a usar Monero.</translation>
+        <source>Choose this option if this is your first time using Franc.</source>
+        <translation>Escolha esta opção se esta é a sua primeira vez a usar Franc.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="86"/>
@@ -2623,8 +2688,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="87"/>
-        <source>Connect your hardware wallet to create a new Monero wallet.</source>
-        <translation>Conecte a sua carteira de hardware para criar uma nova carteira Monero.</translation>
+        <source>Connect your hardware wallet to create a new Franc wallet.</source>
+        <translation>Conecte a sua carteira de hardware para criar uma nova carteira Franc.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="106"/>
@@ -2676,7 +2741,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="93"/>
-        <source>Change the language of the Monero GUI.</source>
+        <source>Change the language of the Franc GUI.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2704,7 +2769,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="81"/>
-        <source>Temporary use of remote nodes is useful in order to use Monero immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
+        <source>Temporary use of remote nodes is useful in order to use Franc immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2732,8 +2797,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="70"/>
-        <source>This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.</source>
-        <translation>Este modo é ideal para gerenciar pequenas quantidades do Monero. Você tem acesso a recursos básicos para fazer e gerenciar transacções. Ele se conectará automaticamente à rede Monero para que você possa começar a usar o Monero imediatamente.</translation>
+        <source>This mode is ideal for managing small amounts of Franc. You have access to basic features for making and managing transactions. It will automatically connect to the Franc network so you can start using Franc immediately.</source>
+        <translation>Este modo é ideal para gerenciar pequenas quantidades do Franc. Você tem acesso a recursos básicos para fazer e gerenciar transacções. Ele se conectará automaticamente à rede Franc para que você possa começar a usar o Franc imediatamente.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="81"/>
@@ -2743,17 +2808,17 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="94"/>
         <source>Remain aware of these limitations. &lt;b&gt;Users who prioritize privacy and decentralization must use a full node instead&lt;/b&gt;.</source>
-        <translation type="unfinished">Fique ciente dessas limitações. &lt;b&gt;Os usuários que priorizam a privacidade e a descentralização devem usar um nó completo&lt;/b&gt;.</translation>
+        <translation>Fique ciente dessas limitações. &lt;b&gt;Os usuários que priorizam a privacidade e a descentralização devem usar um nó completo&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="98"/>
         <source>For enhanced node performance you may specify your region:</source>
-        <translation type="unfinished">Para melhorar o desempenho do nó, você pode especificar sua região:</translation>
+        <translation>Para melhorar o desempenho do nó, você pode especificar sua região:</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="148"/>
         <source>I understand the privacy implications of using a third-party server.</source>
-        <translation type="unfinished">Eu entendo as implicações de privacidade de usar um servidor de terceiros.</translation>
+        <translation>Eu entendo as implicações de privacidade de usar um servidor de terceiros.</translation>
     </message>
 </context>
 <context>
@@ -2772,7 +2837,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
         <location filename="../wizard/WizardModeSelection.qml" line="66"/>
         <location filename="../wizard/WizardModeSelection.qml" line="96"/>
         <source>Simple mode</source>
-        <translation type="unfinished">Modo simples</translation>
+        <translation>Modo simples</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="69"/>
@@ -2787,7 +2852,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="124"/>
         <source>Advanced mode</source>
-        <translation type="unfinished">Modo avançado</translation>
+        <translation>Modo avançado</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="125"/>
@@ -2797,7 +2862,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="136"/>
         <source>Change language</source>
-        <translation type="unfinished">Alterar idioma</translation>
+        <translation>Alterar idioma</translation>
     </message>
 </context>
 <context>
@@ -2838,7 +2903,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="201"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Erro a obter nodes remotos através do servidor terceiro.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="228"/>
@@ -2914,7 +2979,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../wizard/WizardRestoreWallet2.qml" line="77"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Erro a obter nodes remotos através do servidor terceiro.</translation>
     </message>
 </context>
 <context>
@@ -2926,10 +2991,10 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="66"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.
 
 If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Para poder comunicar com a rede Monero, a carteira necessita de estar conectada a um node Monero. Para a melhor privacidade é recomendado correr o seu próprio node.
+        <translation>Para poder comunicar com a rede Franc, a carteira necessita de estar conectada a um node Franc. Para a melhor privacidade é recomendado correr o seu próprio node.
 
 Caso não tenha a possibilidade de usar o seu próprio node tem a opção de se ligar ao um node remoto.</translation>
     </message>
@@ -3184,8 +3249,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="840"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero enviado com sucesso: %1 transação(ões)</translation>
+        <source>Franc sent successfully: %1 transaction(s) </source>
+        <translation>Franc enviado com sucesso: %1 transação(ões)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="870"/>
@@ -3213,8 +3278,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="913"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Este endereço recebeu %1 monero, com %2 confirmação(ões)</translation>
+        <source>This address received %1 franc, with %2 confirmation(s).</source>
+        <translation>Este endereço recebeu %1 franc, com %2 confirmação(ões)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="924"/>
@@ -3275,7 +3340,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="1803"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Erro a obter nodes remotos através do servidor terceiro.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1858"/>
@@ -3300,7 +3365,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="1909"/>
         <source>New version of franc-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Nova versão da GUI do Monero disponível: %1&lt;br&gt;%2</translation>
+        <translation>Nova versão da GUI do Franc disponível: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="2002"/>
@@ -3341,8 +3406,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="910"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Este endereço recebeu %1 monero, porém a transação ainda não foi minerada</translation>
+        <source>This address received %1 franc, but the transaction is not yet mined</source>
+        <translation>Este endereço recebeu %1 franc, porém a transação ainda não foi minerada</translation>
     </message>
     <message>
         <location filename="../main.qml" line="917"/>
@@ -3368,8 +3433,8 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="1328"/>
         <location filename="../main.qml" line="1343"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Franc</source>
+        <translation>Franc</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1503"/>

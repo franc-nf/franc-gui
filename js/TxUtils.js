@@ -17,6 +17,13 @@ function addressTruncate(address, range){
     return address.substring(0, range) + "..." + address.substring(address.length-range);
 }
 
+function addressTruncatePretty(address, blocks){
+    if(typeof(address) === "undefined") return;
+    if(typeof(blocks) === "undefined") blocks = 2;
+    var ret = "";
+    return address.substring(0, 4 * blocks).match(/.{1,4}/g).join(' ') + " .. " + address.substring(address.length - 4 * blocks).match(/.{1,4}/g).join(' ');
+}
+
 function check256(str, length) {
     if (str.length != length)
         return false;
@@ -67,7 +74,7 @@ function isValidOpenAliasAddress(address) {
 }
 
 function makeQRCodeString(addr, amount) {
-    var XMR_URI_SCHEME = "monero:"
+    var XMR_URI_SCHEME = "franc:"
     var XMR_AMOUNT = "tx_amount"
     var qrCodeString =""
     qrCodeString += (XMR_URI_SCHEME + addr)

@@ -7322,8 +7322,8 @@ uniforms           19115
 percussion         19093
 santo              19091
 cloth              19086
-leisure            19081
-1880s              19080
+leisure            18081
+1880s              18080
 carnival           19074
 baden              19055
 freed              19049

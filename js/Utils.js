@@ -107,3 +107,49 @@ function filterNodes(nodes, port) {
 function epoch(){
     return Math.floor((new Date).getTime()/1000);
 }
+
+function isAlpha(letter){ return letter.match(/^[A-Za-z0-9]+$/) !== null; }
+
+function isLowerCaseChar(letter){ return letter === letter.toLowerCase(); }
+
+function isUpperLock(shift, letter){
+    if(!isAlpha((letter))) return false;
+    if(shift) {
+        if(isLowerCaseChar(letter))
+            return true;
+        else
+            return false;
+    } else {
+        if(isLowerCaseChar(letter))
+            return false;
+        else
+            return true;
+    }
+
+function qmlEach(item, properties, ignoredObjectNames, arr){
+    // Traverse QML object tree and return components that match
+    // via property names. Similar to jQuery("myclass").each(...
+    // item: root QML object
+    // properties: list of strings
+    // ignoredObjectNames: list of strings
+    if(typeof(arr) == 'undefined') arr = [];
+    if(item.hasOwnProperty('data') && item['data'].length > 0){
+        for(var i = 0; i < item['data'].length; i += 1){
+            arr = qmlEach(item['data'][i], properties, ignoredObjectNames, arr);
+        }
+    }
+
+    // ignore QML objects on .objectName
+    for(var a = 0; a < ignoredObjectNames.length; a += 1){
+        if(item.objectName === ignoredObjectNames[a]){
+            return arr;
+        }
+    }
+
+    for(var u = 0; u < properties.length; u += 1){
+        if(item.hasOwnProperty(properties[u])) arr.push(item);
+        else break;
+    }
+
+    return arr;
+}

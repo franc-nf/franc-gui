@@ -67,7 +67,7 @@ Rectangle {
                 Layout.fillWidth: true
 
                 Text {
-                    text: qsTr("This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.") + translationManager.emptyString
+                    text: qsTr("This mode is ideal for managing small amounts of Franc. You have access to basic features for making and managing transactions. It will automatically connect to the Franc network so you can start using Franc immediately.") + translationManager.emptyString
                     wrapMode: Text.Wrap
                     Layout.topMargin: 14 * scaleRatio
                     Layout.fillWidth: true

@@ -31,6 +31,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 2.0
 import QtQuick.Dialogs 1.2
 
+import "../../js/Wizard.js" as Wizard
 import "../../version.js" as Version
 import "../../components" as MoneroComponents
 
@@ -94,7 +95,7 @@ Rectangle {
             MoneroComponents.TextBlock {
                 id: guiMoneroVersion
                 font.pixelSize: 14 * scaleRatio
-                text: qsTr("Embedded Monero version: ") + translationManager.emptyString
+                text: qsTr("Embedded Franc version: ") + translationManager.emptyString
             }
 
             MoneroComponents.TextBlock {
@@ -172,10 +173,19 @@ Rectangle {
                 property var style: "<style type='text/css'>a {cursor:pointer;text-decoration: none; color: #FF6C3C}</style>"
                 text: (currentWallet ? currentWallet.walletCreationHeight : "") + style + qsTr(" <a href='#'> (Click to change)</a>") + translationManager.emptyString
                 onLinkActivated: {
-                    inputDialog.labelText = qsTr("Set a new restore height:") + translationManager.emptyString;
+                    inputDialog.labelText = qsTr("Set a new restore height.\nYou can enter a block height or a date (YYYY-MM-DD):") + translationManager.emptyString;
                     inputDialog.inputText = currentWallet ? currentWallet.walletCreationHeight : "0";
                     inputDialog.onAcceptedCallback = function() {
-                        var _restoreHeight = parseInt(inputDialog.inputText);
+                        var _restoreHeight;
+                        if (inputDialog.inputText) {
+                            var restoreHeightText = inputDialog.inputText;
+                            // Parse date string or restore height as integer
+                            if(restoreHeightText.indexOf('-') === 4 && restoreHeightText.length === 10) {
+                                _restoreHeight = Wizard.getApproximateBlockchainHeight(restoreHeightText);
+                            } else {
+                                _restoreHeight = parseInt(restoreHeightText)
+                            }
+                        }
                         if (!isNaN(_restoreHeight)) {
                             if(_restoreHeight >= 0) {
                                 currentWallet.walletCreationHeight = _restoreHeight
@@ -206,7 +216,7 @@ Rectangle {
                             }
                         }
 
-                        appWindow.showStatusMessage(qsTr("Invalid restore height specified. Must be a number."),3);
+                        appWindow.showStatusMessage(qsTr("Invalid restore height specified. Must be a number or a date formatted YYYY-MM-DD"),3);
                     }
                     inputDialog.onRejectedCallback = null;
                     inputDialog.open()
@@ -287,7 +297,7 @@ Rectangle {
             onClicked: {
                 var data = "";
                 data += "GUI version: " + Version.GUI_VERSION + " (Qt " + qtRuntimeVersion + ")";
-                data += "\nEmbedded Monero version: " + Version.GUI_MONERO_VERSION;
+                data += "\nEmbedded Franc version: " + Version.GUI_MONERO_VERSION;
                 data += "\nWallet path: ";
 
                 var wallet_path = walletPath();

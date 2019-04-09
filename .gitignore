@@ -11,3 +11,7 @@ moc_*
 *.xcodeproj
 franc-wallet-gui_plugin_import.cpp
 franc-wallet-gui_qml_plugin_import.cpp
+*.qmlc
+*.jsc
+/.vscode
+.vscode/

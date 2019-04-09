@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2019, The Monero Project
 //
 // All rights reserved.
 //
@@ -45,7 +45,7 @@ import "js/Windows.js" as Windows
 
 ApplicationWindow {
     id: appWindow
-    title: "Monero"
+    title: "Franc"
 
     property var currentItem
     property bool hideBalanceForced: false
@@ -85,6 +85,8 @@ ApplicationWindow {
     property int disconnectedEpoch: 0
     property int estimatedBlockchainSize: 75 // GB
     property alias viewState: rootItem.state
+    property string prevSplashText;
+    property bool splashDisplayedBeforeButtonRequest;
 
     property string remoteNodeService: {
         // support user-defined remote node aggregators
@@ -266,6 +268,8 @@ ApplicationWindow {
                 wallet_path = moneroAccountsDir + wallet_path;
             // console.log("opening wallet at: ", wallet_path, "with password: ", appWindow.walletPassword);
             console.log("opening wallet at: ", wallet_path, ", network type: ", persistentSettings.nettype == NetworkType.MAINNET ? "mainnet" : persistentSettings.nettype == NetworkType.TESTNET ? "testnet" : "stagenet");
+
+            this.onWalletOpening();
             walletManager.openWalletAsync(wallet_path, walletPassword,
                                               persistentSettings.nettype, persistentSettings.kdfRounds);
         }
@@ -286,6 +290,8 @@ ApplicationWindow {
             currentWallet.unconfirmedMoneyReceived.disconnect(onWalletUnconfirmedMoneyReceived)
             currentWallet.transactionCreated.disconnect(onTransactionCreated)
             currentWallet.connectionStatusChanged.disconnect(onWalletConnectionStatusChanged)
+            currentWallet.deviceButtonRequest.disconnect(onDeviceButtonRequest);
+            currentWallet.deviceButtonPressed.disconnect(onDeviceButtonPressed);
             middlePanel.paymentClicked.disconnect(handlePayment);
             middlePanel.sweepUnmixableClicked.disconnect(handleSweepUnmixable);
             middlePanel.getProofClicked.disconnect(handleGetProof);
@@ -341,6 +347,8 @@ ApplicationWindow {
         currentWallet.unconfirmedMoneyReceived.connect(onWalletUnconfirmedMoneyReceived)
         currentWallet.transactionCreated.connect(onTransactionCreated)
         currentWallet.connectionStatusChanged.connect(onWalletConnectionStatusChanged)
+        currentWallet.deviceButtonRequest.connect(onDeviceButtonRequest);
+        currentWallet.deviceButtonPressed.connect(onDeviceButtonPressed);
         middlePanel.paymentClicked.connect(handlePayment);
         middlePanel.sweepUnmixableClicked.connect(handleSweepUnmixable);
         middlePanel.getProofClicked.connect(handleGetProof);
@@ -422,7 +430,26 @@ ApplicationWindow {
         }
     }
 
+    function onDeviceButtonRequest(code){
+        prevSplashText = splash.messageText;
+        splashDisplayedBeforeButtonRequest = splash.visible;
+        appWindow.showProcessingSplash(qsTr("Please proceed to the device..."));
+    }
+
+    function onDeviceButtonPressed(){
+        if (splashDisplayedBeforeButtonRequest){
+           appWindow.showProcessingSplash(prevSplashText);
+        } else {
+           hideProcessingSplash();
+        }
+    }
+
+    function onWalletOpening(){
+        appWindow.showProcessingSplash(qsTr("Opening wallet ..."));
+    }
+
     function onWalletOpened(wallet) {
+        hideProcessingSplash();
         walletName = usefulName(wallet.path)
         console.log(">>> wallet opened: " + wallet)
         if (wallet.status !== Wallet.Status_Ok) {
@@ -436,12 +463,30 @@ ApplicationWindow {
                 wizard.wizardState = "wizardHome";
                 rootItem.state = "wizard";
             }
-            // opening with password but password doesn't match
-            console.error("Error opening wallet with password: ", wallet.errorString);
-            passwordDialog.showError(qsTr("Couldn't open wallet: ") + wallet.errorString);
-            console.log("closing wallet async : " + wallet.address)
-            closeWallet();
-            return;
+            // try to resolve common wallet cache errors automatically
+            switch (wallet.errorString) {
+                case "basic_string::_M_replace_aux":
+                    walletManager.clearWalletCache(wallet.path);
+                    walletPassword = passwordDialog.password;
+                    appWindow.initialize();
+                    console.error("Repairing wallet cache with error: ", wallet.errorString);
+                    appWindow.showStatusMessage(qsTr("Repairing incompatible wallet cache. Resyncing wallet."),6);
+                    return;
+                case "std::bad_alloc":
+                    walletManager.clearWalletCache(wallet.path);
+                    walletPassword = passwordDialog.password;
+                    appWindow.initialize();
+                    console.error("Repairing wallet cache with error: ", wallet.errorString);
+                    appWindow.showStatusMessage(qsTr("Repairing incompatible wallet cache. Resyncing wallet."),6);
+                    return;
+                default:
+                    // opening with password but password doesn't match
+                    console.error("Error opening wallet with password: ", wallet.errorString);
+                    passwordDialog.showError(qsTr("Couldn't open wallet: ") + wallet.errorString);
+                    console.log("closing wallet async : " + wallet.address)
+                    closeWallet();
+                    return;
+            }
         }
 
         // wallet opened successfully, subscribing for wallet updates
@@ -451,9 +496,26 @@ ApplicationWindow {
         rootItem.state = "normal";
     }
 
-
     function onWalletClosed(walletAddress) {
+        hideProcessingSplash();
         console.log(">>> wallet closed: " + walletAddress)
+    }
+
+    function onWalletPassphraseNeeded(){
+        if(rootItem.state !== "normal") return;
+
+        hideProcessingSplash();
+
+        console.log(">>> wallet passphrase needed: ")
+        passphraseDialog.onAcceptedCallback = function() {
+            walletManager.onPassphraseEntered(passphraseDialog.passphrase);
+            this.onWalletOpening();
+        }
+        passphraseDialog.onRejectedCallback = function() {
+            walletManager.onPassphraseEntered("", true);
+            this.onWalletOpening();
+        }
+        passphraseDialog.open()
     }
 
     function onWalletUpdate() {
@@ -466,6 +528,9 @@ ApplicationWindow {
             currentWallet.history.refresh(currentWallet.currentSubaddressAccount)
             timeToUnlock = currentWallet.history.minutesToUnlock
             leftPanel.minutesToUnlockTxt = (timeToUnlock > 0)? (timeToUnlock == 20)? qsTr("Unlocked balance (waiting for block)") : qsTr("Unlocked balance (~%1 min)").arg(timeToUnlock) : qsTr("Unlocked balance");
+
+            if(middlePanel.state == "History")
+                middlePanel.historyView.update();
         }
     }
 
@@ -615,19 +680,28 @@ ApplicationWindow {
         // history refresh is handled by walletUpdated
         currentWallet.history.refresh(currentWallet.currentSubaddressAccount) // this will refresh model
         currentWallet.subaddress.refresh(currentWallet.currentSubaddressAccount)
+
+        if(middlePanel.state == "History")
+            middlePanel.historyView.update();
     }
 
     function onWalletUnconfirmedMoneyReceived(txId, amount) {
         // refresh history
         console.log("unconfirmed money found")
-        currentWallet.history.refresh(currentWallet.currentSubaddressAccount)
+        currentWallet.history.refresh(currentWallet.currentSubaddressAccount);
+
+        if(middlePanel.state == "History")
+            middlePanel.historyView.update();
     }
 
     function onWalletMoneySent(txId, amount) {
         // refresh transaction history here
-        console.log("monero sent found")
+        console.log("franc sent found")
         currentWallet.refresh()
-        currentWallet.history.refresh(currentWallet.currentSubaddressAccount) // this will refresh model
+        currentWallet.history.refresh(currentWallet.currentSubaddressAccount); // this will refresh model
+
+        if(middlePanel.state == "History")
+            middlePanel.historyView.update();
     }
 
     function walletsFound() {
@@ -837,7 +911,7 @@ ApplicationWindow {
                     txid_text += ", "
                 txid_text += txid[i]
             }
-            informationPopup.text  = (viewOnly)? qsTr("Transaction saved to file: %1").arg(path) : qsTr("Monero sent successfully: %1 transaction(s) ").arg(txid.length) + txid_text + translationManager.emptyString
+            informationPopup.text  = (viewOnly)? qsTr("Transaction saved to file: %1").arg(path) : qsTr("Franc sent successfully: %1 transaction(s) ").arg(txid.length) + txid_text + translationManager.emptyString
             informationPopup.icon  = StandardIcon.Information
             if (transactionDescription.length > 0) {
                 for (var i = 0; i < txid.length; ++i)
@@ -907,10 +981,10 @@ ApplicationWindow {
                 informationPopup.icon = StandardIcon.Critical;
             } else if (received > 0) {
                 if (in_pool) {
-                    informationPopup.text = qsTr("This address received %1 monero, but the transaction is not yet mined").arg(walletManager.displayAmount(received));
+                    informationPopup.text = qsTr("This address received %1 franc, but the transaction is not yet mined").arg(walletManager.displayAmount(received));
                 }
                 else {
-                    informationPopup.text = qsTr("This address received %1 monero, with %2 confirmation(s).").arg(walletManager.displayAmount(received)).arg(confirmations);
+                    informationPopup.text = qsTr("This address received %1 franc, with %2 confirmation(s).").arg(walletManager.displayAmount(received)).arg(confirmations);
                 }
             }
             else {
@@ -1000,7 +1074,10 @@ ApplicationWindow {
         //
         walletManager.walletOpened.connect(onWalletOpened);
         walletManager.walletClosed.connect(onWalletClosed);
+        walletManager.deviceButtonRequest.connect(onDeviceButtonRequest);
+        walletManager.deviceButtonPressed.connect(onDeviceButtonPressed);
         walletManager.checkUpdatesComplete.connect(onWalletCheckUpdatesComplete);
+        walletManager.walletPassphraseNeeded.connect(onWalletPassphraseNeeded);
 
         if(typeof daemonManager != "undefined") {
             daemonManager.daemonStarted.connect(onDaemonStarted);
@@ -1075,6 +1152,8 @@ ApplicationWindow {
         property string daemonPassword: ""
         property bool transferShowAdvanced: false
         property bool receiveShowAdvanced: false
+        property bool historyShowAdvanced: false
+        property bool historyHumanDates: true
         property string blockchainDataDir: ""
         property bool useRemoteNode: false
         property string remoteNodeAddress: ""
@@ -1228,6 +1307,23 @@ ApplicationWindow {
         }
     }
 
+    PassphraseDialog {
+        id: passphraseDialog
+        visible: false
+        z: parent.z + 1
+        anchors.fill: parent
+        property var onAcceptedCallback
+        property var onRejectedCallback
+        onAccepted: {
+            if (onAcceptedCallback)
+                onAcceptedCallback();
+        }
+        onRejected: {
+            if (onRejectedCallback)
+                onRejectedCallback();
+        }
+    }
+
     PasswordDialog {
         id: passwordDialog
         visible: false
@@ -1325,7 +1421,7 @@ ApplicationWindow {
                 PropertyChanges { target: titleBar; basicButtonVisible: false }
                 PropertyChanges { target: titleBar; showMaximizeButton: true }
                 PropertyChanges { target: titleBar; visible: true }
-                PropertyChanges { target: titleBar; title: qsTr("Monero") + translationManager.emptyString }
+                PropertyChanges { target: titleBar; title: qsTr("Franc") + translationManager.emptyString }
             }, State {
                 name: "normal"
                 PropertyChanges { target: leftPanel; visible: (isMobile)? false : true }
@@ -1340,7 +1436,7 @@ ApplicationWindow {
 //                PropertyChanges { target: frameArea; blocked: true }
                 PropertyChanges { target: titleBar; visible: true }
 //                PropertyChanges { target: titleBar; y: 0 }
-                PropertyChanges { target: titleBar; title: qsTr("Monero") + translationManager.emptyString }
+                PropertyChanges { target: titleBar; title: qsTr("Franc") + translationManager.emptyString }
                 PropertyChanges { target: mobileHeader; visible: isMobile ? true : false }
             }
         ]
@@ -1745,6 +1841,7 @@ ApplicationWindow {
     function toggleLanguageView(){
         middlePanel.visible = !middlePanel.visible;
         languageView.visible = !languageView.visible
+        resetLanguageFields()
         // update after changing language from settings page
         if (persistentSettings.language != wizard.language_language) {
             persistentSettings.language = wizard.language_language
@@ -1946,6 +2043,12 @@ ApplicationWindow {
     function clearMoneroCardLabelText(){
         leftPanel.minutesToUnlockTxt = qsTr("Unlocked balance")
         leftPanel.balanceLabelText = qsTr("Balance")
+    }
+
+    // some fields need an extra nudge when changing languages
+    function resetLanguageFields(){
+        clearMoneroCardLabelText()
+        onWalletRefresh()
     }
 
     function userActivity() {

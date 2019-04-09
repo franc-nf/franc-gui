@@ -21,10 +21,10 @@
   <string>franc-wallet-gui</string>
   
   <key>CFBundleName</key>
-  <string>Monero GUI</string>
+  <string>Franc GUI</string>
 
   <key>CFBundleIdentifier</key>
-  <string>org.monero-project.franc-wallet-gui</string>
+  <string>org.franc-nf.franc-wallet-gui</string>
 
   <key>NSSupportsAutomaticGraphicsSwitching</key>
   <true/>

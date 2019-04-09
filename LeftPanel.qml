@@ -95,7 +95,7 @@ Rectangle {
         z: 1
     }
 
-    // card with monero logo
+    // card with franc logo
     Column {
         visible: true
         z: 2
@@ -464,7 +464,7 @@ Rectangle {
                 id: historyButton
                 anchors.left: parent.left
                 anchors.right: parent.right
-                text: qsTr("History") + translationManager.emptyString
+                text: qsTr("Transactions") + translationManager.emptyString
                 symbol: qsTr("H") + translationManager.emptyString
                 dotColor: "#6B0072"
                 onClicked: {

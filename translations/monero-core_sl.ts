@@ -487,13 +487,13 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="62"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>OPOZORILO: Ne delite Monero ključev z drugimi forki, RAZEN če ta fork sam zagotavlja varnost pri deljeni uporabi ključev. Takšno ravnanje zmanjšuje vašo zasebnost.</translation>
+        <source>WARNING: Do not reuse your Franc keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>OPOZORILO: Ne delite Franc ključev z drugimi forki, RAZEN če ta fork sam zagotavlja varnost pri deljeni uporabi ključev. Takšno ravnanje zmanjšuje vašo zasebnost.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="85"/>
-        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Monero. Please write down your seed manually.</source>
-        <translation>OPOZORILO: Kopiranje lahko izpostavi vaše mnemonično seme zlonameni programski opremi, ki lahko nato ukrade vaš Monero. Prosimo, da ročno prepišete mnemorično seme na papir.</translation>
+        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Franc. Please write down your seed manually.</source>
+        <translation>OPOZORILO: Kopiranje lahko izpostavi vaše mnemonično seme zlonameni programski opremi, ki lahko nato ukrade vaš Franc. Prosimo, da ročno prepišete mnemorično seme na papir.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="159"/>
@@ -879,8 +879,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="72"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Rudarjenje na vašem računalniku krepi omrežje Monero. Več ljudi rudari, težje je napasti omrežje. Vsak prispevek pomaga.&lt;br&gt; &lt;br&gt;Z rudarjenjem imate tudi manjšo možnost pridobitve nekaj Monera. Vaš računalnik bo z računanjem zgoščenih vrednosti iskal rešitev za nastanek bloka. Če najdete blok, boste prejeli z njim povezano nagrado . Srečno!</translation>
+        <source>Mining with your computer helps strengthen the Franc network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Franc. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Rudarjenje na vašem računalniku krepi omrežje Franc. Več ljudi rudari, težje je napasti omrežje. Vsak prispevek pomaga.&lt;br&gt; &lt;br&gt;Z rudarjenjem imate tudi manjšo možnost pridobitve nekaj Monera. Vaš računalnik bo z računanjem zgoščenih vrednosti iskal rešitev za nastanek bloka. Če najdete blok, boste prejeli z njim povezano nagrado . Srečno!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="93"/>
@@ -1239,8 +1239,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="97"/>
-        <source>Embedded Monero version: </source>
-        <translation>Vgrajena Monero verzija: </translation>
+        <source>Embedded Franc version: </source>
+        <translation>Vgrajena Franc verzija: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="126"/>
@@ -1356,7 +1356,7 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="171"/>
         <source>Change language</source>
-        <translation type="unfinished">Zamenjaj jezik</translation>
+        <translation>Zamenjaj jezik</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="183"/>
@@ -1401,13 +1401,13 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="233"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Uporablja strežnik tretje osebe za vzpostavitev povezave v Monero omrežje. Je manj varno vendar enostavnejše.</translation>
+        <source>Uses a third-party server to connect to the Franc network. Less secure, but easier on your computer.</source>
+        <translation>Uporablja strežnik tretje osebe za vzpostavitev povezave v Franc omrežje. Je manj varno vendar enostavnejše.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="279"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Da poiščete oddaljeno vozlišče, vnesite &apos;Monero remote node&apos; v vaš najljubši brskalnik. Prosim, da se prepričate, da vozlišče poganja zaupanja vredna stranka.</translation>
+        <source>To find a remote node, type &apos;Franc remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Da poiščete oddaljeno vozlišče, vnesite &apos;Franc remote node&apos; v vaš najljubši brskalnik. Prosim, da se prepričate, da vozlišče poganja zaupanja vredna stranka.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="293"/>
@@ -1521,7 +1521,7 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="183"/>
         <source>Success</source>
-        <translation type="unfinished">Uspelo</translation>
+        <translation>Uspelo</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="184"/>
@@ -1612,8 +1612,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="104"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Ta stran omogoča, da interaktirate z deljeno bazo obročev (RingDB). Ta baza je namenjena Monero denarnicam in prav tako klonom Monera, ki si delijo Monero ključe</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Franc wallets as well as wallets from Franc clones which reuse the Franc keys.</source>
+        <translation>Ta stran omogoča, da interaktirate z deljeno bazo obročev (RingDB). Ta baza je namenjena Franc denarnicam in prav tako klonom Monera, ki si delijo Franc ključe</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="117"/>
@@ -1629,8 +1629,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="120"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Da lahko v Monero transakciji zakrijete kateri inputi so porabljeni, tretja oseba ne sme vedeti, kateri inputi v obroču so že porabljeni. To bi zmanjšalo varnost, ki jo zagotavljajo obročni podpisi. Če je znano, da so vsi inputi razen enega porabljeni, potem je zadnji input, ki se ga porablja očiten. S tem so obročni podpisi, eden izmed treh stebrov varne zasebnosti Monera, neefektivni. Da se transakcije izognejo takšnim inputom, se uporablja lista znano že porabljenih inputov, ki se jih ne uporablja v novih transakcijah. Takšno listo ureja Monero projekt in je dobavljiva na getmonero.org. To listo lahko uvoziš tukaj. &lt;br&gt;Alternativno lahko sam preiščeš blockchain (vključno z Monero kloni, ki si delijo ključe) z uporabo orodja franc-blockchain-mark-spent-outputs, ki ustvari listo znanih, že porabljenih outputov.&lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Franc transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Franc uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Franc project and is available on the franc-nf.fr website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Franc clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Da lahko v Franc transakciji zakrijete kateri inputi so porabljeni, tretja oseba ne sme vedeti, kateri inputi v obroču so že porabljeni. To bi zmanjšalo varnost, ki jo zagotavljajo obročni podpisi. Če je znano, da so vsi inputi razen enega porabljeni, potem je zadnji input, ki se ga porablja očiten. S tem so obročni podpisi, eden izmed treh stebrov varne zasebnosti Monera, neefektivni. Da se transakcije izognejo takšnim inputom, se uporablja lista znano že porabljenih inputov, ki se jih ne uporablja v novih transakcijah. Takšno listo ureja Franc projekt in je dobavljiva na franc-nf.fr. To listo lahko uvoziš tukaj. &lt;br&gt;Alternativno lahko sam preiščeš blockchain (vključno z Franc kloni, ki si delijo ključe) z uporabo orodja franc-blockchain-mark-spent-outputs, ki ustvari listo znanih, že porabljenih outputov.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="141"/>
@@ -1705,13 +1705,13 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="257"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>V izogib izničenju varnosti s strani Monerovih obročnih podpisov, se outputa ne sme zapraviti z različnimi obroči na različnih blockchainih. To načeloma ni zaskrbljujoče, razen ko vam Monero klon omogoča zapravljanje že obstoječih outputov. V tem primeru je potrebno zagotoviti, da ti, že obsotječi outputi uporabljajo isti obroč na obeh verigah.&lt;br&gt; To bo izvedeno samodejno s strani Monera in vsakega softvera, ki vam ne želi, namerno zmanjšati zasebnost.&lt;br&gt;Če uporabljate Monero klon, ki si deli vaše ključe in ne vključuje te zaščite, lahko še vedno zagotovite, da so vaše transakcije varne. To storite, tako da jih najprej zapravite na klonu in nato ročno dodate obroč na tej strani, ki vam zatem omogoča varno plačevanje z Monerom.&lt;br&gt;V kolikor ne uporabljate takšnih Monero klonov, potem vam ni potrebno storiti ničesar, saj se vse izvede samodejno.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Franc&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Franc clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Franc and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Franc clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Franc safely.&lt;br&gt;If you do not use a key-reusing Franc clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>V izogib izničenju varnosti s strani Francvih obročnih podpisov, se outputa ne sme zapraviti z različnimi obroči na različnih blockchainih. To načeloma ni zaskrbljujoče, razen ko vam Franc klon omogoča zapravljanje že obstoječih outputov. V tem primeru je potrebno zagotoviti, da ti, že obsotječi outputi uporabljajo isti obroč na obeh verigah.&lt;br&gt; To bo izvedeno samodejno s strani Monera in vsakega softvera, ki vam ne želi, namerno zmanjšati zasebnost.&lt;br&gt;Če uporabljate Franc klon, ki si deli vaše ključe in ne vključuje te zaščite, lahko še vedno zagotovite, da so vaše transakcije varne. To storite, tako da jih najprej zapravite na klonu in nato ročno dodate obroč na tej strani, ki vam zatem omogoča varno plačevanje z Francm.&lt;br&gt;V kolikor ne uporabljate takšnih Franc klonov, potem vam ni potrebno storiti ničesar, saj se vse izvede samodejno.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="279"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>To shrani obroče tistih outputov, ki so bili zapravljeni na verigi, ki si deli Monero ključe. Tako se lahko isti obroč ponovno uporabi in s tem ohrani zasebnost.</translation>
+        <source>This records rings used by outputs spent on Franc on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>To shrani obroče tistih outputov, ki so bili zapravljeni na verigi, ki si deli Franc ključe. Tako se lahko isti obroč ponovno uporabi in s tem ohrani zasebnost.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="290"/>
@@ -1746,12 +1746,12 @@ You can change the password in the wallet settings.</source>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="376"/>
         <source>I intend to spend on key-reusing fork(s)</source>
-        <translation>Nameravam plačevati na forku, ki si deli Monero ključe</translation>
+        <translation>Nameravam plačevati na forku, ki si deli Franc ključe</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="390"/>
         <source>I might want to spend on key-reusing fork(s)</source>
-        <translation>Morda nameravam plačevati na forku, ki si deli Monero ključe</translation>
+        <translation>Morda nameravam plačevati na forku, ki si deli Franc ključe</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="404"/>
@@ -1890,8 +1890,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="337"/>
-        <source>Enter the Monero Address (example: 44AFFq5kSiGBoZ...)</source>
-        <translation>Vnesi Monero naslov (primer: 44AFFq5kSiGBoZ...)</translation>
+        <source>Enter the Franc Address (example: 44AFFq5kSiGBoZ...)</source>
+        <translation>Vnesi Franc naslov (primer: 44AFFq5kSiGBoZ...)</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="348"/>
@@ -2237,8 +2237,8 @@ Velikost obroča: </translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="616"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero uspešno poslan</translation>
+        <source>Franc sent successfully</source>
+        <translation>Franc uspešno poslan</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="680"/>
@@ -2282,7 +2282,8 @@ Posodobite vaš prikriti proces ali se povežite na drugega.</translation>
         <source>Fastest (x41.5 fee)</source>
         <translation>Najhitrejše (x41.5)</translation>
     </message>
-</context>
+<message><source></source><translation></translation>
+    <location filename="../pages/Transfer.qml" line="91"/></message></context>
 <context>
     <name>TxKey</name>
     <message>
@@ -2372,6 +2373,70 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
 </context>
 <context>
+    <name>Utils</name>
+    <message>
+        <location filename="../js/Utils.js" line="42"/>
+        <source>Wrong password</source>
+        <translation>Napačno geslo</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="61"/>
+        <source>second ago</source>
+        <translation>sekundo nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="63"/>
+        <source>seconds ago</source>
+        <translation>sekund nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="67"/>
+        <source>minute ago</source>
+        <translation>minuto nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="69"/>
+        <source>minutes ago</source>
+        <translation>minut nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="73"/>
+        <source>hour ago</source>
+        <translation>uro nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="75"/>
+        <source>hours ago</source>
+        <translation>ur nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="79"/>
+        <location filename="../js/Utils.js" line="83"/>
+        <source>day ago</source>
+        <translation>dan nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="85"/>
+        <source>days ago</source>
+        <translation>dni nazaj</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Testnet</source>
+        <translation>Testnet</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Stagenet</source>
+        <translation>Stagenet</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Mainnet</source>
+        <translation>Mainnet</translation>
+    </message>
+</context>
+<context>
     <name>WizardAskPassword</name>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="41"/>
@@ -2458,12 +2523,12 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="125"/>
         <source>Wallet creation date as `YYYY-MM-DD` or restore height</source>
-        <translation type="unfinished">Datum ustvaritve denarnice v obliki `YYYY-MM-DD` ali obnovitvena višina</translation>
+        <translation>Datum ustvaritve denarnice v obliki `YYYY-MM-DD` ali obnovitvena višina</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="128"/>
         <source>Restore height</source>
-        <translation type="unfinished">Višina obnovitve</translation>
+        <translation>Višina obnovitve</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="139"/>
@@ -2537,8 +2602,8 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="58"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.</source>
-        <translation>Da lahko komunicirate z Monero omrežjem, mora biti vaša denarnica povezana z Monero vozliščem. Za najvišjo stopnjo zasebnosti je priporočljivo, da imate svoje vozlišče.</translation>
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.</source>
+        <translation>Da lahko komunicirate z Franc omrežjem, mora biti vaša denarnica povezana z Franc vozliščem. Za najvišjo stopnjo zasebnosti je priporočljivo, da imate svoje vozlišče.</translation>
     </message>
 </context>
 <context>
@@ -2588,7 +2653,7 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="120"/>
-        <source>Additionally, you may specify a bootstrap node to use Monero immediately.</source>
+        <source>Additionally, you may specify a bootstrap node to use Franc immediately.</source>
         <translation>Za takojšno uporabo Monera lahko nastavite bootstrap vozlišče.</translation>
     </message>
     <message>
@@ -2601,8 +2666,8 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     <name>WizardHome</name>
     <message>
         <location filename="../wizard/WizardHome.qml" line="60"/>
-        <source>Welcome to Monero.</source>
-        <translation>Dobrodošli v Monero.</translation>
+        <source>Welcome to Franc.</source>
+        <translation>Dobrodošli v Franc.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="65"/>
@@ -2611,8 +2676,8 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="66"/>
-        <source>Choose this option if this is your first time using Monero.</source>
-        <translation>Izberite to opcijo, če prvič uporabljate Monero.</translation>
+        <source>Choose this option if this is your first time using Franc.</source>
+        <translation>Izberite to opcijo, če prvič uporabljate Franc.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="86"/>
@@ -2621,8 +2686,8 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="87"/>
-        <source>Connect your hardware wallet to create a new Monero wallet.</source>
-        <translation>Za ustvaritev nove Monero denarnice, poveži hardversko denarnico z računalnikom.</translation>
+        <source>Connect your hardware wallet to create a new Franc wallet.</source>
+        <translation>Za ustvaritev nove Franc denarnice, poveži hardversko denarnico z računalnikom.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="106"/>
@@ -2674,7 +2739,7 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="93"/>
-        <source>Change the language of the Monero GUI.</source>
+        <source>Change the language of the Franc GUI.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2702,7 +2767,7 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="81"/>
-        <source>Temporary use of remote nodes is useful in order to use Monero immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
+        <source>Temporary use of remote nodes is useful in order to use Franc immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
         <translation>Začasna uporaba oddaljenih vozlišč je uporabna za takojšno uporabo Monera, vendar pa je pri tem načinu (vključno z &lt;i&gt;bootstrap&lt;/i&gt; nastavitvijo) možno sledenje vašega IP naslova, obnovitvene višine ter zahtevkov povezanih z bločnimi podatki. Oddaljena vozlišča vam lahko posredujejo nenatančne informacije z namenom zbiranja informacij o vaših transakcijah.</translation>
     </message>
     <message>
@@ -2730,8 +2795,8 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="70"/>
-        <source>This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.</source>
-        <translation>Ta način je namenjen za upravljanje manjših zneskov Monera. Avtomatično se poveže v Monero omrežje, da lahko z uporabo Monera začnete takoj.</translation>
+        <source>This mode is ideal for managing small amounts of Franc. You have access to basic features for making and managing transactions. It will automatically connect to the Franc network so you can start using Franc immediately.</source>
+        <translation>Ta način je namenjen za upravljanje manjših zneskov Monera. Avtomatično se poveže v Franc omrežje, da lahko z uporabo Monera začnete takoj.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="81"/>
@@ -2924,10 +2989,10 @@ V primeru dokazila o plačilu, naslov prejemnika ni potreben.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="66"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.
 
 If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Da lahko komunicirate z omrežjem Monero, mora biti vaša denarnica povezana z Monero vozliščem. Za najboljšo zasebnost je priporočljiva uporaba lastnega vozlišča.
+        <translation>Da lahko komunicirate z omrežjem Franc, mora biti vaša denarnica povezana z Franc vozliščem. Za najboljšo zasebnost je priporočljiva uporaba lastnega vozlišča.
 
 Če nimate opcije uporabe lastnega vozlišča, lahko uporabite opcijo oddaljenega vozišča.</translation>
     </message>
@@ -3145,8 +3210,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="840"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero poslan uspešno: %1 transakcij(a) </translation>
+        <source>Franc sent successfully: %1 transaction(s) </source>
+        <translation>Franc poslan uspešno: %1 transakcij(a) </translation>
     </message>
     <message>
         <location filename="../main.qml" line="870"/>
@@ -3167,8 +3232,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="913"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Ta naslov je prejel %1 monerov, s %2 potrditev.</translation>
+        <source>This address received %1 franc, with %2 confirmation(s).</source>
+        <translation>Ta naslov je prejel %1 francv, s %2 potrditev.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="924"/>
@@ -3335,7 +3400,7 @@ Provizija: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="910"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
+        <source>This address received %1 franc, but the transaction is not yet mined</source>
         <translation>Ta naslov je prejel %1 monera(ov), ampak transakcija še ni v bloku</translation>
     </message>
     <message>
@@ -3362,8 +3427,8 @@ Provizija: </translation>
     <message>
         <location filename="../main.qml" line="1328"/>
         <location filename="../main.qml" line="1343"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Franc</source>
+        <translation>Franc</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1503"/>

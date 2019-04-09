@@ -43,7 +43,7 @@ Rectangle {
     property string viewName: "wizardOpenWallet1"
 
     FolderListModel {
-        // @TODO: Current implementation only lists the folders in `/home/foo/Monero/wallets`, better
+        // @TODO: Current implementation only lists the folders in `/home/foo/Franc/wallets`, better
         // solution is to actually scan for .keys files.
         id: folderModel
         nameFilters: ["*"]

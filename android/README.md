@@ -10,7 +10,7 @@ Copyright (c) 2014-2018, The Monero Project
 
 # Base environnement
 
-        cd monero/utils/build_scripts
+        cd franc/utils/build_scripts
         docker build -f android32.Dockerfile -t franc-android .
         cd ..
 

@@ -11,12 +11,12 @@
     <message>
         <location filename="../pages/Account.qml" line="82"/>
         <source>Balance All</source>
-        <translation type="unfinished"></translation>
+        <translation>Fiókok összesített egyenlege</translation>
     </message>
     <message>
         <location filename="../pages/Account.qml" line="88"/>
         <source>Total balance: </source>
-        <translation type="unfinished"></translation>
+        <translation>Egyenleg összesen: </translation>
     </message>
     <message>
         <location filename="../pages/Account.qml" line="112"/>
@@ -27,7 +27,7 @@
     <message>
         <location filename="../pages/Account.qml" line="121"/>
         <source>Total unlocked balance: </source>
-        <translation type="unfinished"></translation>
+        <translation>Elérhető egyenleg: </translation>
     </message>
     <message>
         <location filename="../pages/Account.qml" line="159"/>
@@ -482,13 +482,13 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="62"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>FIGYELEM! Ne használd újra a kulcsokat egy másik Monero forkon! </translation>
+        <source>WARNING: Do not reuse your Franc keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>FIGYELEM! Ne használd újra a kulcsokat egy másik Franc forkon! </translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="85"/>
-        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Monero. Please write down your seed manually.</source>
-        <translation>FIGYELEM: A mag vágólapra másolása esetén egy kártékony szoftver naplózhatja a vágólap tartalmát és ez a Monero eltulajdonításához vezethet. Kérlek kézzel írd le a mag szavait egy papírra.</translation>
+        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Franc. Please write down your seed manually.</source>
+        <translation>FIGYELEM: A mag vágólapra másolása esetén egy kártékony szoftver naplózhatja a vágólap tartalmát és ez a Franc eltulajdonításához vezethet. Kérlek kézzel írd le a mag szavait egy papírra.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="106"/>
@@ -879,8 +879,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="72"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>A saját gépen történő bányászat biztonságosabbá teszi a Monero hálózatot. Minél többen bányásznak annál nehezebb a hálózatot megtámadni. Minden kicsi számít! Ha bányászol a számítógéped hash-értékeket állít elő és amennyiben Te találod meg a következő blokkhoz tartozó helyes számot a blokkjutalom Téged illet. Sok szerencsét!</translation>
+        <source>Mining with your computer helps strengthen the Franc network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Franc. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>A saját gépen történő bányászat biztonságosabbá teszi a Franc hálózatot. Minél többen bányásznak annál nehezebb a hálózatot megtámadni. Minden kicsi számít! Ha bányászol a számítógéped hash-értékeket állít elő és amennyiben Te találod meg a következő blokkhoz tartozó helyes számot a blokkjutalom Téged illet. Sok szerencsét!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="93"/>
@@ -1239,8 +1239,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="97"/>
-        <source>Embedded Monero version: </source>
-        <translation>Monero verzió:</translation>
+        <source>Embedded Franc version: </source>
+        <translation>Franc verzió:</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="126"/>
@@ -1356,7 +1356,7 @@ A régi gyorsítótár fájlja át lesz nevezve és bármikor visszaállítható
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="171"/>
         <source>Change language</source>
-        <translation type="unfinished">Nyelv választása</translation>
+        <translation>Nyelv választása</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="183"/>
@@ -1379,7 +1379,7 @@ A régi gyorsítótár fájlja át lesz nevezve és bármikor visszaállítható
     <message>
         <location filename="../pages/settings/SettingsLog.qml" line="218"/>
         <source>command + enter (e.g &apos;help&apos; or &apos;status&apos;)</source>
-        <translation>parancs + enter (pl.: &apos;segítség&apos; vagy &apos;állapot&apos;)</translation>
+        <translation>parancs + enter (pl.: &apos;help&apos; vagy &apos;status&apos;)</translation>
     </message>
 </context>
 <context>
@@ -1401,13 +1401,13 @@ A régi gyorsítótár fájlja át lesz nevezve és bármikor visszaállítható
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="233"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
+        <source>Uses a third-party server to connect to the Franc network. Less secure, but easier on your computer.</source>
         <translation>Távoli szerver használata a hálózat eléréséhez. Kevésbé biztonságos, de kisebb gépigényű.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="279"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Távoli szerver használatához írd be a kedvenc keresődbe, hogy &apos;Monero remote node&apos;. Bizonyosodj meg róla, hogy a szerver megbízható!</translation>
+        <source>To find a remote node, type &apos;Franc remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Távoli szerver használatához írd be a kedvenc keresődbe, hogy &apos;Franc remote node&apos;. Bizonyosodj meg róla, hogy a szerver megbízható!</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="293"/>
@@ -1521,7 +1521,7 @@ A régi gyorsítótár fájlja át lesz nevezve és bármikor visszaállítható
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="183"/>
         <source>Success</source>
-        <translation type="unfinished">Kész</translation>
+        <translation>Kész</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="184"/>
@@ -1612,8 +1612,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="104"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Itt léphetsz kapcsolatba a megosztott gyűrűadatbázissal. Ezt az adatbázist használja a tárcád és a többi Monero-klón program is.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Franc wallets as well as wallets from Franc clones which reuse the Franc keys.</source>
+        <translation>Itt léphetsz kapcsolatba a megosztott gyűrűadatbázissal. Ezt az adatbázist használja a tárcád és a többi Franc-klón program is.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="117"/>
@@ -1629,8 +1629,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="120"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Ahhoz, hogy a gyűrű aláírások anonimak maradjanak, ki kell zárni az olyan tranzakció bemeneteket amiket egy másik (Monero-klón) blokkláncon már felhasználtak. Ha ez nem történik meg, esetleg egy rosszindulatú harmadik fél nagyobb eséllyel megtippelheti, hogy melyik a valódi tranzakció bemenet. Ez gyengítheti a Monero anonimitásának háromszintű vedelmét. Ahhoz, hogy ezeket a bemeneteket kizárd a tranzakcióidból, a getmonero.org fenntart egy folyamatosan frissített listát róluk, amit letöltés után itt tudsz importálni. Másik lehetőséged a blokklánc átvizsgálása a franc-blockchain-mark-spent-outputs programmal és egy lista készítése.</translation>
+        <source>In order to obscure which inputs in a Franc transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Franc uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Franc project and is available on the franc-nf.fr website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Franc clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Ahhoz, hogy a gyűrű aláírások anonimak maradjanak, ki kell zárni az olyan tranzakció bemeneteket amiket egy másik (Franc-klón) blokkláncon már felhasználtak. Ha ez nem történik meg, esetleg egy rosszindulatú harmadik fél nagyobb eséllyel megtippelheti, hogy melyik a valódi tranzakció bemenet. Ez gyengítheti a Franc anonimitásának háromszintű vedelmét. Ahhoz, hogy ezeket a bemeneteket kizárd a tranzakcióidból, a franc-nf.fr fenntart egy folyamatosan frissített listát róluk, amit letöltés után itt tudsz importálni. Másik lehetőséged a blokklánc átvizsgálása a franc-blockchain-mark-spent-outputs programmal és egy lista készítése.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="141"/>
@@ -1700,13 +1700,13 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="257"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>A gyűrűaláírások anonimitásának megőrzése érdekében egy bemenetet nem ajánlott különböző gyűrűben, különböző blokkláncokon felhasználni. Ha a kulcsokat újra felhasználó Monero-klónt használsz ügyelj arra hogy a különböző blokkláncokon a gyűrűben ugyanazok a bemenetek szerepeljenek. Ez általában automatikus, hacsak nem egy olyan Monero-klónt használsz ami direkt gyengíteni szeretné az anonimitásodat.</translation>
+        <source>In order to avoid nullifying the protection afforded by Franc&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Franc clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Franc and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Franc clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Franc safely.&lt;br&gt;If you do not use a key-reusing Franc clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>A gyűrűaláírások anonimitásának megőrzése érdekében egy bemenetet nem ajánlott különböző gyűrűben, különböző blokkláncokon felhasználni. Ha a kulcsokat újra felhasználó Franc-klónt használsz ügyelj arra hogy a különböző blokkláncokon a gyűrűben ugyanazok a bemenetek szerepeljenek. Ez általában automatikus, hacsak nem egy olyan Franc-klónt használsz ami direkt gyengíteni szeretné az anonimitásodat.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="279"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Az itt rögzített gyűrűkkel lehet tranzakciót indítani egy a kulcsokat újra felhasználó Monero forkon. Ugyanazon gyűrű használatával elkerülhető az anonimitás csökkenése.</translation>
+        <source>This records rings used by outputs spent on Franc on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Az itt rögzített gyűrűkkel lehet tranzakciót indítani egy a kulcsokat újra felhasználó Franc forkon. Ugyanazon gyűrű használatával elkerülhető az anonimitás csökkenése.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="290"/>
@@ -1890,8 +1890,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="337"/>
-        <source>Enter the Monero Address (example: 44AFFq5kSiGBoZ...)</source>
-        <translation>Írd be a Monero címet (Pl: 44AFFq5kSiGBoZ...)</translation>
+        <source>Enter the Franc Address (example: 44AFFq5kSiGBoZ...)</source>
+        <translation>Írd be a Franc címet (Pl: 44AFFq5kSiGBoZ...)</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="348"/>
@@ -2230,8 +2230,8 @@ Ringsize: </source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="616"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero sikeresen elküldve</translation>
+        <source>Franc sent successfully</source>
+        <translation>Franc sikeresen elküldve</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="680"/>
@@ -2275,7 +2275,8 @@ Frissítsd a daemont vagy csatlakozz egy másikhoz</translation>
         <source>Fastest (x41.5 fee)</source>
         <translation>Leggyorsabb (x41,5 díj)</translation>
     </message>
-</context>
+<message><source></source><translation></translation>
+    <location filename="../pages/Transfer.qml" line="91"/></message></context>
 <context>
     <name>TxKey</name>
     <message>
@@ -2365,6 +2366,70 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
 </context>
 <context>
+    <name>Utils</name>
+    <message>
+        <location filename="../js/Utils.js" line="42"/>
+        <source>Wrong password</source>
+        <translation>Hibás jelszó</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="61"/>
+        <source>second ago</source>
+        <translation>másodperce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="63"/>
+        <source>seconds ago</source>
+        <translation>másodperce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="67"/>
+        <source>minute ago</source>
+        <translation>perce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="69"/>
+        <source>minutes ago</source>
+        <translation>perce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="73"/>
+        <source>hour ago</source>
+        <translation>órája</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="75"/>
+        <source>hours ago</source>
+        <translation>órája</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="79"/>
+        <location filename="../js/Utils.js" line="83"/>
+        <source>day ago</source>
+        <translation>napja</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="85"/>
+        <source>days ago</source>
+        <translation>napja</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Testnet</source>
+        <translation>Testnet</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Stagenet</source>
+        <translation>Stagenet</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Mainnet</source>
+        <translation>Mainnet</translation>
+    </message>
+</context>
+<context>
     <name>WizardAskPassword</name>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="41"/>
@@ -2451,7 +2516,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="125"/>
         <source>Wallet creation date as `YYYY-MM-DD` or restore height</source>
-        <translation type="unfinished">Tárca létrehozásának dátuma &quot;ÉÉÉÉ-HH-NN&quot; formátumban, vagy helyreállítási magasság megadása</translation>
+        <translation>Tárca létrehozásának dátuma &quot;ÉÉÉÉ-HH-NN&quot; formátumban, vagy helyreállítási magasság megadása</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="128"/>
@@ -2505,7 +2570,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     <message>
         <location filename="../wizard/WizardCreateWallet1.qml" line="127"/>
         <source>This seed is &lt;b&gt;very&lt;/b&gt; important to write down and keep secret. It is all you need to backup and restore your wallet.</source>
-        <translation>A magot &lt;b&gt;NAGYON&lt;/b&gt; leírni és titokban tartani. Ez szükséges a tárca mentéséhez és későbbi helyreállításához.</translation>
+        <translation>A magot &lt;b&gt;NAGYON FONTOS&lt;/b&gt; leírni és titokban tartani. Ez szükséges a tárca mentéséhez és későbbi helyreállításához.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet1.qml" line="135"/>
@@ -2518,7 +2583,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     <message>
         <location filename="../wizard/WizardCreateWallet2.qml" line="78"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hiba a csomópontlista lekérésekor.</translation>
     </message>
 </context>
 <context>
@@ -2530,8 +2595,8 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="58"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.</source>
-        <translation>A Monero hálózattal való kommunikációhoz csatlakozni kell egy Monero csomóponthoz. Az anonimitás megőrzéséhez ajánlott saját csomópont futtatása.</translation>
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.</source>
+        <translation>A Franc hálózattal való kommunikációhoz csatlakozni kell egy Franc csomóponthoz. Az anonimitás megőrzéséhez ajánlott saját csomópont futtatása.</translation>
     </message>
 </context>
 <context>
@@ -2581,8 +2646,8 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="120"/>
-        <source>Additionally, you may specify a bootstrap node to use Monero immediately.</source>
-        <translation>Továbbá használhatsz bootstrap csomópontot a Monero azonnali használatához.</translation>
+        <source>Additionally, you may specify a bootstrap node to use Franc immediately.</source>
+        <translation>Továbbá használhatsz bootstrap csomópontot a Franc azonnali használatához.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="183"/>
@@ -2594,8 +2659,8 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     <name>WizardHome</name>
     <message>
         <location filename="../wizard/WizardHome.qml" line="60"/>
-        <source>Welcome to Monero.</source>
-        <translation>Üdvözöl a Monero!</translation>
+        <source>Welcome to Franc.</source>
+        <translation>Üdvözöl a Franc!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="65"/>
@@ -2604,8 +2669,8 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="66"/>
-        <source>Choose this option if this is your first time using Monero.</source>
-        <translation>Válaszd ezt ha először használod a Monerot!</translation>
+        <source>Choose this option if this is your first time using Franc.</source>
+        <translation>Válaszd ezt ha először használod a Franct!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="86"/>
@@ -2614,7 +2679,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="87"/>
-        <source>Connect your hardware wallet to create a new Monero wallet.</source>
+        <source>Connect your hardware wallet to create a new Franc wallet.</source>
         <translation>Csatlakoztasd az eszközt a tárca létrehozásához.</translation>
     </message>
     <message>
@@ -2667,7 +2732,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="93"/>
-        <source>Change the language of the Monero GUI.</source>
+        <source>Change the language of the Franc GUI.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2695,7 +2760,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="81"/>
-        <source>Temporary use of remote nodes is useful in order to use Monero immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
+        <source>Temporary use of remote nodes is useful in order to use Franc immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
         <translation>A távoli csomópontok ideiglenes használata hasznos ha azonnal szeretnéd használni a Monerót, viszont légy arra tekintettel, hogy a csomópont akár naplózhatja az IP címedet, vagy a visszaállítási magasságot, esetleg pontatlan információt közöl.</translation>
     </message>
     <message>
@@ -2723,8 +2788,8 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="70"/>
-        <source>This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.</source>
-        <translation>Ez a mód kisebb összegek kezelésekor ideális. Lehetőség van a tranzakciók egyszerű kezelésére. Automatikusan csatlakozik a Monero hálózathoz, így azonnal használható.</translation>
+        <source>This mode is ideal for managing small amounts of Franc. You have access to basic features for making and managing transactions. It will automatically connect to the Franc network so you can start using Franc immediately.</source>
+        <translation>Ez a mód kisebb összegek kezelésekor ideális. Lehetőség van a tranzakciók egyszerű kezelésére. Automatikusan csatlakozik a Franc hálózathoz, így azonnal használható.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="81"/>
@@ -2829,7 +2894,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="201"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hiba a csomópontlista lekérésekor.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="228"/>
@@ -2905,7 +2970,7 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     <message>
         <location filename="../wizard/WizardRestoreWallet2.qml" line="77"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hiba a csomópontlista lekérésekor.</translation>
     </message>
 </context>
 <context>
@@ -2917,10 +2982,10 @@ Egyszerű költési bizonylat esetén nem kell megadni a kedvezményezett címé
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="66"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.
 
 If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>A Monero hálózattal való kommunikációhoz csatlakozni kell egy Monero csomóponthoz. Az anonimitás megőrzéséhez ajánlott saját csomópont futtatása.
+        <translation>A Franc hálózattal való kommunikációhoz csatlakozni kell egy Franc csomóponthoz. Az anonimitás megőrzéséhez ajánlott saját csomópont futtatása.
 
 Ha nem tudsz saját csomópontot futtatni, csatlakozhatsz egy távolihoz.</translation>
     </message>
@@ -3166,8 +3231,8 @@ Költő cím indexe: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="840"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero sikeresen elküldve: %1 tranzakció(k)</translation>
+        <source>Franc sent successfully: %1 transaction(s) </source>
+        <translation>Franc sikeresen elküldve: %1 tranzakció(k)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="870"/>
@@ -3188,8 +3253,8 @@ Költő cím indexe: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="913"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Erre a címre %1 monero érkezett, %2 megerősítéssel.</translation>
+        <source>This address received %1 franc, with %2 confirmation(s).</source>
+        <translation>Erre a címre %1 franc érkezett, %2 megerősítéssel.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="924"/>
@@ -3250,7 +3315,7 @@ Költő cím indexe: </translation>
     <message>
         <location filename="../main.qml" line="1803"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hiba a csomópontlista lekérésekor.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1858"/>
@@ -3323,8 +3388,8 @@ Költő cím indexe: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="910"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Erre a címre %1 monero érkezett, de a tranzakció még nincs blokkba foglalva</translation>
+        <source>This address received %1 franc, but the transaction is not yet mined</source>
+        <translation>Erre a címre %1 franc érkezett, de a tranzakció még nincs blokkba foglalva</translation>
     </message>
     <message>
         <location filename="../main.qml" line="917"/>
@@ -3350,8 +3415,8 @@ Költő cím indexe: </translation>
     <message>
         <location filename="../main.qml" line="1328"/>
         <location filename="../main.qml" line="1343"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Franc</source>
+        <translation>Franc</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1503"/>

@@ -487,13 +487,13 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="62"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>UYARI: EĞER ayrılma(fork) anahtarı yeniden kullanma sorunu giderme özelliği içermiyorsa, Monero anahtarlarınızı bu tip ayrılma(fork)da kullanmayın. Aksi halde gizliliğinize zarar verirsiniz.</translation>
+        <source>WARNING: Do not reuse your Franc keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>UYARI: EĞER ayrılma(fork) anahtarı yeniden kullanma sorunu giderme özelliği içermiyorsa, Franc anahtarlarınızı bu tip ayrılma(fork)da kullanmayın. Aksi halde gizliliğinize zarar verirsiniz.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="85"/>
-        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Monero. Please write down your seed manually.</source>
-        <translation>UYARI: Tohumunuzu (seed) panoya kopyalamak, bunu kopyalatıp Monero&apos;larınızı çalacak kötü niyetli yazılımlara açık hale getirir. Lütfen tohumunuzu elle yazın.</translation>
+        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Franc. Please write down your seed manually.</source>
+        <translation>UYARI: Tohumunuzu (seed) panoya kopyalamak, bunu kopyalatıp Franc&apos;larınızı çalacak kötü niyetli yazılımlara açık hale getirir. Lütfen tohumunuzu elle yazın.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="159"/>
@@ -879,8 +879,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="72"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Bilgisayarınızla birlikte madencilik yapmak Monero ağını güçlendirmeye yardımcı olur. İnsanların benimsediği derecede, ağın saldırıya ne kadar zorlaşırsa, ve insanlara biraz yardımcı olur. &lt;br&gt; &lt;br&gt; Madencilik ayrıca bazı Monero kazanmak için küçük bir şans verir. Bilgisayarınız blok çözümleri arayan karma değerler oluşturacaktır. Bir blok bulursanız, size verilen ödülleri alacaksınız. İyi şanslar!</translation>
+        <source>Mining with your computer helps strengthen the Franc network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Franc. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Bilgisayarınızla birlikte madencilik yapmak Franc ağını güçlendirmeye yardımcı olur. İnsanların benimsediği derecede, ağın saldırıya ne kadar zorlaşırsa, ve insanlara biraz yardımcı olur. &lt;br&gt; &lt;br&gt; Madencilik ayrıca bazı Franc kazanmak için küçük bir şans verir. Bilgisayarınız blok çözümleri arayan karma değerler oluşturacaktır. Bir blok bulursanız, size verilen ödülleri alacaksınız. İyi şanslar!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="93"/>
@@ -1239,8 +1239,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="97"/>
-        <source>Embedded Monero version: </source>
-        <translation>Gömülü Monero sürümü: </translation>
+        <source>Embedded Franc version: </source>
+        <translation>Gömülü Franc sürümü: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="126"/>
@@ -1357,7 +1357,7 @@ Aşağıdaki bilgiler silinecek
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="171"/>
         <source>Change language</source>
-        <translation type="unfinished">Dili değiştir</translation>
+        <translation>Dili değiştir</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsLayout.qml" line="183"/>
@@ -1402,13 +1402,13 @@ Aşağıdaki bilgiler silinecek
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="233"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Monero ağına bağlanmak için üçüncü parti sunucu kullanır. Daha az güvenli, ama bilgasayarınıza daha az zorlar.</translation>
+        <source>Uses a third-party server to connect to the Franc network. Less secure, but easier on your computer.</source>
+        <translation>Franc ağına bağlanmak için üçüncü parti sunucu kullanır. Daha az güvenli, ama bilgasayarınıza daha az zorlar.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="279"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Uzak düğüm bulmak için, göde arama motorunuza &apos;Monero remote node&apos; girin. Lütfen düğümün güvenilir bir üçümcü parti olduğundan emin olun.</translation>
+        <source>To find a remote node, type &apos;Franc remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Uzak düğüm bulmak için, göde arama motorunuza &apos;Franc remote node&apos; girin. Lütfen düğümün güvenilir bir üçümcü parti olduğundan emin olun.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="293"/>
@@ -1522,7 +1522,7 @@ Aşağıdaki bilgiler silinecek
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="183"/>
         <source>Success</source>
-        <translation type="unfinished">Başarılı</translation>
+        <translation>Başarılı</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="184"/>
@@ -1613,8 +1613,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="104"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Bu sayfa paylaşılan halka veritabanı ile etkileşim içindir. Bu veritabanı Monero ve Monero anahtarlarını kullanan Monero klonlarının cüzdanları içindir.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Franc wallets as well as wallets from Franc clones which reuse the Franc keys.</source>
+        <translation>Bu sayfa paylaşılan halka veritabanı ile etkileşim içindir. Bu veritabanı Franc ve Franc anahtarlarını kullanan Franc klonlarının cüzdanları içindir.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="117"/>
@@ -1630,8 +1630,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="120"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Monero işleminde hangi girdilerin harcanacağını gizlemek için, üçüncü bir taraf, bir halkada hangi girdilerin zaten harcanmış olduğunu söyleyememelidir. Bunu yapabilmek, halka imzaların sağladığı korumayı zayıflatabilir. Girişlerden birinin dışında kalanın zaten harcanmış olduğu biliniyorsa, o zaman harcanan girdi görünür hale gelir ve böylece Monero kullanımının gizlilik korumasının üç ana katmanından biri olan halka imzaların etkisini ortadan kaldırır.&lt;br&gt; İşlemlerin bu girdilerden kaçınmasına yardım etmek için, harcandığı bilinen girdilerin bir listesi yeni işlemlerde kullanmaktan kaçınmak için kullanılabilir. Böyle bir liste Monero projesi tarafından korunur ve getmonero.org web sitesinde mevcuttur ve bu listeyi buradan içe aktarabilirsiniz.&lt;br&gt; Alternatif olarak, bilinen harcanan çıktıların bir listesini oluşturmak için franc-blockchain-mark-spent-outputs aracını kullanarak block zincirini (ve anahtarı tekrar kullanan Monero klonlarının blok zincirini), kendiniz de tarayabilirsiniz.&lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Franc transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Franc uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Franc project and is available on the franc-nf.fr website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Franc clones) yourself using the franc-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Franc işleminde hangi girdilerin harcanacağını gizlemek için, üçüncü bir taraf, bir halkada hangi girdilerin zaten harcanmış olduğunu söyleyememelidir. Bunu yapabilmek, halka imzaların sağladığı korumayı zayıflatabilir. Girişlerden birinin dışında kalanın zaten harcanmış olduğu biliniyorsa, o zaman harcanan girdi görünür hale gelir ve böylece Franc kullanımının gizlilik korumasının üç ana katmanından biri olan halka imzaların etkisini ortadan kaldırır.&lt;br&gt; İşlemlerin bu girdilerden kaçınmasına yardım etmek için, harcandığı bilinen girdilerin bir listesi yeni işlemlerde kullanmaktan kaçınmak için kullanılabilir. Böyle bir liste Franc projesi tarafından korunur ve franc-nf.fr web sitesinde mevcuttur ve bu listeyi buradan içe aktarabilirsiniz.&lt;br&gt; Alternatif olarak, bilinen harcanan çıktıların bir listesini oluşturmak için franc-blockchain-mark-spent-outputs aracını kullanarak block zincirini (ve anahtarı tekrar kullanan Franc klonlarının blok zincirini), kendiniz de tarayabilirsiniz.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="141"/>
@@ -1701,12 +1701,12 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="257"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Monero halka imzalarının getirdiği korumanın boşa gitmemesi için, bir çıktı farklı blok zincirlerinde farklı halkalar ile harcanmamalıdır. Normalde endişelenecek bir durum olmamakla birlikte, anahtarı yeniden kullanan Monero klonu mevcut çıktıları kullanmanıza izin verdiğinde sorun olur. Bu durumda, bu mevcut çıktıların her iki zincirde de aynı halkaları kullandığına emin olmalısınız.&lt;br&gt;Bu koruma, Monero ve herhangi bir, aktif olarak gizliliğinize sızmaya çalışmayan, anahtarı yeniden kullanan yazılımda kendiliğinden yapılır.&lt;br&gt; Eğer siz de anahtarı yeniden kullanan Monero klonu kullanıyorsanız, ve bu klon bu korumayı içermiyor ise, önce klonda harcayarak, sonra bu sayfadaki halkayı elle ekleyerek işleminizin güvenleğini sağlayabilirsiniz.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Franc&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Franc clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Franc and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Franc clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Franc safely.&lt;br&gt;If you do not use a key-reusing Franc clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Franc halka imzalarının getirdiği korumanın boşa gitmemesi için, bir çıktı farklı blok zincirlerinde farklı halkalar ile harcanmamalıdır. Normalde endişelenecek bir durum olmamakla birlikte, anahtarı yeniden kullanan Franc klonu mevcut çıktıları kullanmanıza izin verdiğinde sorun olur. Bu durumda, bu mevcut çıktıların her iki zincirde de aynı halkaları kullandığına emin olmalısınız.&lt;br&gt;Bu koruma, Franc ve herhangi bir, aktif olarak gizliliğinize sızmaya çalışmayan, anahtarı yeniden kullanan yazılımda kendiliğinden yapılır.&lt;br&gt; Eğer siz de anahtarı yeniden kullanan Franc klonu kullanıyorsanız, ve bu klon bu korumayı içermiyor ise, önce klonda harcayarak, sonra bu sayfadaki halkayı elle ekleyerek işleminizin güvenleğini sağlayabilirsiniz.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="279"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <source>This records rings used by outputs spent on Franc on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
         <translation>Bu, anahtarı yeniden kullanan zincirde harcanan çıktılarla kullanılan halkaları kaydeder, böylece aynı halka gizlilik sorunlarını önlemek için yeniden kullanılabilir.</translation>
     </message>
     <message>
@@ -1891,8 +1891,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="337"/>
-        <source>Enter the Monero Address (example: 44AFFq5kSiGBoZ...)</source>
-        <translation>Monero Adresini girin (örnek: 44AFFq5kSiGBoZ...)</translation>
+        <source>Enter the Franc Address (example: 44AFFq5kSiGBoZ...)</source>
+        <translation>Franc Adresini girin (örnek: 44AFFq5kSiGBoZ...)</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="348"/>
@@ -2106,8 +2106,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="616"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero başarı ile gönderildi</translation>
+        <source>Franc sent successfully</source>
+        <translation>Franc başarı ile gönderildi</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="463"/>
@@ -2277,7 +2277,8 @@ Lütfen yükseltin veya başka bir daemona bağlanın </translation>
         <source>Fastest (x41.5 fee)</source>
         <translation>En hızlı (x41.5 ücret)</translation>
     </message>
-</context>
+<message><source></source><translation></translation>
+    <location filename="../pages/Transfer.qml" line="91"/></message></context>
 <context>
     <name>TxKey</name>
     <message>
@@ -2367,6 +2368,70 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
 </context>
 <context>
+    <name>Utils</name>
+    <message>
+        <location filename="../js/Utils.js" line="42"/>
+        <source>Wrong password</source>
+        <translation>Yanlış parola</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="61"/>
+        <source>second ago</source>
+        <translation>saniye önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="63"/>
+        <source>seconds ago</source>
+        <translation>saniye önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="67"/>
+        <source>minute ago</source>
+        <translation>dakika önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="69"/>
+        <source>minutes ago</source>
+        <translation>dakika önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="73"/>
+        <source>hour ago</source>
+        <translation>saat önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="75"/>
+        <source>hours ago</source>
+        <translation>saat önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="79"/>
+        <location filename="../js/Utils.js" line="83"/>
+        <source>day ago</source>
+        <translation>gün önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="85"/>
+        <source>days ago</source>
+        <translation>gün önce</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Testnet</source>
+        <translation>Testnet</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Stagenet</source>
+        <translation>Prova ağı (Stagenet)</translation>
+    </message>
+    <message>
+        <location filename="../js/Utils.js" line="94"/>
+        <source>Mainnet</source>
+        <translation>Ana ağ (mainnet)</translation>
+    </message>
+</context>
+<context>
     <name>WizardAskPassword</name>
     <message>
         <location filename="../wizard/WizardAskPassword.qml" line="41"/>
@@ -2453,12 +2518,12 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="125"/>
         <source>Wallet creation date as `YYYY-MM-DD` or restore height</source>
-        <translation type="unfinished">&apos;YYYY-AA-GG&apos; olarak cüzdan oluşturma tarihi veya geri yükleme yüksekliği</translation>
+        <translation>&apos;YYYY-AA-GG&apos; olarak cüzdan oluşturma tarihi veya geri yükleme yüksekliği</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="128"/>
         <source>Restore height</source>
-        <translation type="unfinished">Geri yükleme yüksekliği</translation>
+        <translation>Geri yükleme yüksekliği</translation>
     </message>
     <message>
         <location filename="../wizard/WizardCreateDevice1.qml" line="139"/>
@@ -2520,7 +2585,7 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     <message>
         <location filename="../wizard/WizardCreateWallet2.qml" line="78"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Üçüncü taraf sunucudan uzak düğümler alınamadı.</translation>
     </message>
 </context>
 <context>
@@ -2532,8 +2597,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="58"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.</source>
-        <translation>Monero ağı ile iletişim kurabilmek için, cüzdanınızın bir Monero düğümüne bağlı olması gerekir. En iyi gizlilik için kendi düğümünüzü çalıştırmanız önerilir.</translation>
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.</source>
+        <translation>Franc ağı ile iletişim kurabilmek için, cüzdanınızın bir Franc düğümüne bağlı olması gerekir. En iyi gizlilik için kendi düğümünüzü çalıştırmanız önerilir.</translation>
     </message>
 </context>
 <context>
@@ -2583,8 +2648,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="120"/>
-        <source>Additionally, you may specify a bootstrap node to use Monero immediately.</source>
-        <translation>Ayrıca, hemen Monero&apos;yu kullanmak için bir önyükleme düğümü belirleyebilirsiniz.</translation>
+        <source>Additionally, you may specify a bootstrap node to use Franc immediately.</source>
+        <translation>Ayrıca, hemen Franc&apos;yu kullanmak için bir önyükleme düğümü belirleyebilirsiniz.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="183"/>
@@ -2596,8 +2661,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     <name>WizardHome</name>
     <message>
         <location filename="../wizard/WizardHome.qml" line="60"/>
-        <source>Welcome to Monero.</source>
-        <translation>Monero&apos;ya hoş geldin.</translation>
+        <source>Welcome to Franc.</source>
+        <translation>Franc&apos;ya hoş geldin.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="65"/>
@@ -2606,8 +2671,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="66"/>
-        <source>Choose this option if this is your first time using Monero.</source>
-        <translation>Monero&apos;yu ilk kez kullanıyorsanız bu seçeneği kullanın.</translation>
+        <source>Choose this option if this is your first time using Franc.</source>
+        <translation>Franc&apos;yu ilk kez kullanıyorsanız bu seçeneği kullanın.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="86"/>
@@ -2616,8 +2681,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="87"/>
-        <source>Connect your hardware wallet to create a new Monero wallet.</source>
-        <translation>Yeni bir Monero cüzdanı oluşturmak için donanım cüzdanınızı bağlayın.</translation>
+        <source>Connect your hardware wallet to create a new Franc wallet.</source>
+        <translation>Yeni bir Franc cüzdanı oluşturmak için donanım cüzdanınızı bağlayın.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="106"/>
@@ -2669,7 +2734,7 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardLang.qml" line="93"/>
-        <source>Change the language of the Monero GUI.</source>
+        <source>Change the language of the Franc GUI.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2697,8 +2762,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="81"/>
-        <source>Temporary use of remote nodes is useful in order to use Monero immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
-        <translation>Uzak düğümlerin geçici olarak kullanılması, hemen Monero&apos;yu kullanmak için kullanışlıdır (bu nedenle &lt;i&gt;önyükleme&lt;/i&gt; adıdır), ancak uzak düğümleri kullanırken (önyükleme ayarı dahil), düğümlerin IP adresinizi izleyebileceğinin, &quot;geri yükleme yüksekliğinizi&quot; ve ilişkili blok isteği verilerinizi takip edebileceğinin ve yaptığınız işlemler hakkında daha fazla bilgi edinmek için size yanlış bilgiler gönderebileceğinin farkında olun.</translation>
+        <source>Temporary use of remote nodes is useful in order to use Franc immediately (hence the name &lt;i&gt;bootstrap&lt;/i&gt;), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
+        <translation>Uzak düğümlerin geçici olarak kullanılması, hemen Franc&apos;yu kullanmak için kullanışlıdır (bu nedenle &lt;i&gt;önyükleme&lt;/i&gt; adıdır), ancak uzak düğümleri kullanırken (önyükleme ayarı dahil), düğümlerin IP adresinizi izleyebileceğinin, &quot;geri yükleme yüksekliğinizi&quot; ve ilişkili blok isteği verilerinizi takip edebileceğinin ve yaptığınız işlemler hakkında daha fazla bilgi edinmek için size yanlış bilgiler gönderebileceğinin farkında olun.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="94"/>
@@ -2725,8 +2790,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="70"/>
-        <source>This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.</source>
-        <translation>Bu mod az miktarda Monero&apos;yu yönetmek için idealdir. İşlemleri yapmak ve yönetmek için temel özelliklere erişebilirsiniz. Monero şebekesine otomatik olarak bağlanacaktır, böylece Monero&apos;yu hemen kullanmaya başlayabilirsiniz.</translation>
+        <source>This mode is ideal for managing small amounts of Franc. You have access to basic features for making and managing transactions. It will automatically connect to the Franc network so you can start using Franc immediately.</source>
+        <translation>Bu mod az miktarda Franc&apos;yu yönetmek için idealdir. İşlemleri yapmak ve yönetmek için temel özelliklere erişebilirsiniz. Franc şebekesine otomatik olarak bağlanacaktır, böylece Franc&apos;yu hemen kullanmaya başlayabilirsiniz.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="81"/>
@@ -2831,7 +2896,7 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="201"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Üçüncü taraf sunucudan uzak düğümler alınamadı.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOpenWallet1.qml" line="228"/>
@@ -2907,7 +2972,7 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     <message>
         <location filename="../wizard/WizardRestoreWallet2.qml" line="77"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Üçüncü taraf sunucudan uzak düğümler alınamadı.</translation>
     </message>
 </context>
 <context>
@@ -2919,10 +2984,10 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="66"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.
+        <source>To be able to communicate with the Franc network your wallet needs to be connected to a Franc node. For best privacy it&apos;s recommended to run your own node.
 
 If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Monero şebekesi ile iletişim kurabilmek için, cüzdanınızın bir Monero düğümüne bağlı olması gerekir. En iyi gizlilik için kendi düğümünüzü çalıştırmanız önerilir.
+        <translation>Franc şebekesi ile iletişim kurabilmek için, cüzdanınızın bir Franc düğümüne bağlı olması gerekir. En iyi gizlilik için kendi düğümünüzü çalıştırmanız önerilir.
 
 Kendi düğümünüzü çalıştırma seçeneğiniz yoksa, uzaktaki bir düğüme bağlanma seçeneği de vardır.</translation>
     </message>
@@ -3167,8 +3232,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="840"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero başarı ile gönderildi: %1 işlem</translation>
+        <source>Franc sent successfully: %1 transaction(s) </source>
+        <translation>Franc başarı ile gönderildi: %1 işlem</translation>
     </message>
     <message>
         <location filename="../main.qml" line="870"/>
@@ -3195,8 +3260,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="913"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Bu adres, %2 onay (lar) ile %1 monero aldı.</translation>
+        <source>This address received %1 franc, with %2 confirmation(s).</source>
+        <translation>Bu adres, %2 onay (lar) ile %1 franc aldı.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="924"/>
@@ -3257,7 +3322,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="1803"/>
         <source>Failed to fetch remote nodes from third-party server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Üçüncü taraf sunucudan uzak düğümler alınamadı.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1858"/>
@@ -3282,7 +3347,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="1909"/>
         <source>New version of franc-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Monero-wallet-gui&apos;nin yeni sürümü mevcut: %1&lt;br&gt;%2</translation>
+        <translation>Franc-wallet-gui&apos;nin yeni sürümü mevcut: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="2002"/>
@@ -3323,8 +3388,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="910"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Bu adres %1 monero aldı, ancak işlem henüz çıkarılmadı</translation>
+        <source>This address received %1 franc, but the transaction is not yet mined</source>
+        <translation>Bu adres %1 franc aldı, ancak işlem henüz çıkarılmadı</translation>
     </message>
     <message>
         <location filename="../main.qml" line="917"/>
@@ -3350,8 +3415,8 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="1328"/>
         <location filename="../main.qml" line="1343"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Franc</source>
+        <translation>Franc</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1503"/>

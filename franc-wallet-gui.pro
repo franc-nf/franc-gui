@@ -462,7 +462,7 @@ OTHER_FILES += \
 
 DISTFILES += \
     notes.txt \
-    monero/src/wallet/CMakeLists.txt
+    franc/src/wallet/CMakeLists.txt
 
 
 # windows application icon
