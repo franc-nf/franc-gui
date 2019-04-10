@@ -65,7 +65,7 @@ source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MONERO_DIR=franc
-MONEROD_EXEC=monerod
+MONEROD_EXEC=francd
 
 MAKE='make'
 if [[ $platform == *bsd* ]]; then
@@ -95,7 +95,7 @@ fi
 if [ "$platform" == "darwin" ]; then
     BIN_PATH=$BIN_PATH/franc-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
-    MONEROD_EXEC=monerod.exe
+    MONEROD_EXEC=francd.exe
 fi
 
 # force version update
@@ -114,7 +114,7 @@ fi
 $QMAKE ../franc-wallet-gui.pro "$CONFIG" || exit
 $MAKE || exit 
 
-# Copy monerod to bin folder
+# Copy francd to bin folder
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
 cp ../$MONERO_DIR/bin/$MONEROD_EXEC $BIN_PATH
 fi

@@ -875,7 +875,7 @@
     <message>
         <location filename="../pages/Mining.qml" line="66"/>
         <source>Your daemon must be synchronized before you can start mining</source>
-        <translation>Der Hintergrunddienst (monerod) muss mit dem Netzwerk synchronisiert sein, bevor mit dem Mining begonnen werden kann.</translation>
+        <translation>Der Hintergrunddienst (francd) muss mit dem Netzwerk synchronisiert sein, bevor mit dem Mining begonnen werden kann.</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="72"/>
@@ -955,7 +955,7 @@
     <message>
         <location filename="../pages/Mining.qml" line="189"/>
         <source>Mining is only available on local daemons. Run a local daemon to be able to mine.&lt;br&gt;</source>
-        <translation>Mining ist nur mit einem lokalen Hintergrunddienst verfügbar. Starte den lokalen Hintergrunddienst (monerod), um zu minen.&lt;br&gt;</translation>
+        <translation>Mining ist nur mit einem lokalen Hintergrunddienst verfügbar. Starte den lokalen Hintergrunddienst (francd), um zu minen.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="201"/>
@@ -1629,8 +1629,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="120"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Um zu verschleiern, welche Inputs in einer Monero-Transaktion ausgegeben werden, sollte ein Dritter nicht erkennen können, welche Inputs in einem Ring bereits bekannt sind. Dies würde den Schutz durch Ringsignaturen schwächen. Wenn alle bis auf einen der Inputs bereits ausgegeben sind, wird der tatsächlich ausgegebene Input sichtbar, wodurch die Wirkung von Ringsignaturen - eine der drei Hauptebenen der Privatsphäre, die Monero verwendet - zunichte gemacht wird. Um diese Inputs zu vermeiden, kann eine Liste bekannter Ausgaben verwendet werden, um die Verwendung in neuen Transaktionen zu vermeiden. Eine solche Liste wird vom Monero-Projekt verwaltet und ist auf der Website getmonero.org verfügbar, und Sie können diese Liste hier importieren.&lt;br&gt;Alternativ kannst du die Blockchain (und die Blockchain der Monero-Klone) selbst mit dem Monero-Blockchain-mark-spent-outputs-Tool scannen, um eine Liste der bekannten Outputs zu erstellen.&lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the franc-nf.fr website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Um zu verschleiern, welche Inputs in einer Monero-Transaktion ausgegeben werden, sollte ein Dritter nicht erkennen können, welche Inputs in einem Ring bereits bekannt sind. Dies würde den Schutz durch Ringsignaturen schwächen. Wenn alle bis auf einen der Inputs bereits ausgegeben sind, wird der tatsächlich ausgegebene Input sichtbar, wodurch die Wirkung von Ringsignaturen - eine der drei Hauptebenen der Privatsphäre, die Monero verwendet - zunichte gemacht wird. Um diese Inputs zu vermeiden, kann eine Liste bekannter Ausgaben verwendet werden, um die Verwendung in neuen Transaktionen zu vermeiden. Eine solche Liste wird vom Monero-Projekt verwaltet und ist auf der Website franc-nf.fr verfügbar, und Sie können diese Liste hier importieren.&lt;br&gt;Alternativ kannst du die Blockchain (und die Blockchain der Monero-Klone) selbst mit dem Monero-Blockchain-mark-spent-outputs-Tool scannen, um eine Liste der bekannten Outputs zu erstellen.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="141"/>

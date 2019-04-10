@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
     MainApp app(argc, argv);
 
     app.setApplicationName("franc-core");
-    app.setOrganizationDomain("getmonero.org");
+    app.setOrganizationDomain("franc-nf.fr");
     app.setOrganizationName("franc-nf");
 
 #if defined(Q_OS_LINUX)

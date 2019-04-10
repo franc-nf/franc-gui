@@ -35,7 +35,7 @@ DaemonManager *DaemonManager::instance(const QStringList *args)
 
 bool DaemonManager::start(const QString &flags, NetworkType::Type nettype, const QString &dataDir, const QString &bootstrapNodeAddress)
 {
-    // prepare command line arguments and pass to monerod
+    // prepare command line arguments and pass to francd
     QStringList arguments;
 
     // Start daemon with --detach flag on non-windows platforms
@@ -78,7 +78,7 @@ bool DaemonManager::start(const QString &flags, NetworkType::Type nettype, const
 
     arguments << "--max-concurrency" << QString::number(concurrency);
 
-    qDebug() << "starting monerod " + m_monerod;
+    qDebug() << "starting francd " + m_monerod;
     qDebug() << "With command line arguments " << arguments;
 
     m_daemon = new QProcess();
@@ -88,7 +88,7 @@ bool DaemonManager::start(const QString &flags, NetworkType::Type nettype, const
     connect (m_daemon, SIGNAL(readyReadStandardOutput()), this, SLOT(printOutput()));
     connect (m_daemon, SIGNAL(readyReadStandardError()), this, SLOT(printError()));
 
-    // Start monerod
+    // Start francd
     bool started = m_daemon->startDetached(m_monerod, arguments);
 
     // add state changed listener
@@ -170,9 +170,9 @@ bool DaemonManager::stopWatcher(NetworkType::Type nettype) const
             if(counter >= 5) {
                 qDebug() << "Killing it! ";
 #ifdef Q_OS_WIN
-                QProcess::execute("taskkill /F /IM monerod.exe");
+                QProcess::execute("taskkill /F /IM francd.exe");
 #else
-                QProcess::execute("pkill monerod");
+                QProcess::execute("pkill francd");
 #endif
             }
 
@@ -218,7 +218,7 @@ bool DaemonManager::running(NetworkType::Type nettype) const
     QString status;
     sendCommand("status", nettype, status);
     qDebug() << status;
-    // `./monerod status` returns BUSY when syncing.
+    // `./francd status` returns BUSY when syncing.
     // Treat busy as connected, until fixed upstream.
     if (status.contains("Height:") || status.contains("BUSY") ) {
         return true;
@@ -302,11 +302,11 @@ DaemonManager::DaemonManager(QObject *parent)
     : QObject(parent)
 {
 
-    // Platform depetent path to monerod
+    // Platform depetent path to francd
 #ifdef Q_OS_WIN
-    m_monerod = QApplication::applicationDirPath() + "/monerod.exe";
+    m_monerod = QApplication::applicationDirPath() + "/francd.exe";
 #elif defined(Q_OS_UNIX)
-    m_monerod = QApplication::applicationDirPath() + "/monerod";
+    m_monerod = QApplication::applicationDirPath() + "/francd";
 #endif
 
     if (m_monerod.length() == 0) {

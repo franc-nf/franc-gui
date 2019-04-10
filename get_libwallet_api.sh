@@ -224,7 +224,7 @@ eval $make_exec  -j$CPU_CORE_COUNT
 eval $make_exec  install -j$CPU_CORE_COUNT
 popd
 
-# Build monerod
+# Build francd
 # win32 need to build daemon manually with msys2 toolchain
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
     pushd $MONERO_DIR/build/$BUILD_TYPE/src/daemon

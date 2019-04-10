@@ -18,7 +18,7 @@ packagesExist(hidapi-libusb) {
     QMAKE_LFLAGS += -fstack-protector -fstack-protector-strong
 }
 
-# cleaning "auto-generated" bitmonero directory on "make distclean"
+# cleaning "auto-generated" franc directory on "make distclean"
 QMAKE_DISTCLEAN += -r $$WALLET_ROOT
 
 INCLUDEPATH +=  $$WALLET_ROOT/include \

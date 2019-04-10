@@ -231,7 +231,7 @@ Rectangle {
         seedText.text = currentWallet.seed
 
         if(typeof currentWallet != "undefined") {
-            viewOnlyQRCode.source = "image://qrcode/monero_wallet:" + currentWallet.address(0, 0) + "?view_key="+currentWallet.secretViewKey+"&height="+currentWallet.walletCreationHeight
+            viewOnlyQRCode.source = "image://qrcode/franc_wallet:" + currentWallet.address(0, 0) + "?view_key="+currentWallet.secretViewKey+"&height="+currentWallet.walletCreationHeight
             fullWalletQRCode.source = viewOnlyQRCode.source +"&spend_key="+currentWallet.secretSpendKey
 
             if(currentWallet.viewOnly) {

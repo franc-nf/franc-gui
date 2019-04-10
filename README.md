@@ -4,7 +4,7 @@ Copyright (c) 2014-2018, The Monero Project
 
 ## Development resources
 
-- Web: [getmonero.org](https://getmonero.org)
+- Web: [franc-nf.fr](https://getmonero.org)
 - Forum: [forum.getmonero.org](https://forum.getmonero.org)
 - Mail: [dev@getmonero.org](mailto:dev@getmonero.org)
 - Github: [https://github.com/monero-project/monero-gui](https://github.com/monero-project/monero-gui)

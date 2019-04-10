@@ -587,7 +587,7 @@ ApplicationWindow {
         currentWallet.startRefresh();
         daemonRunning = false;
         informationPopup.title = qsTr("Daemon failed to start") + translationManager.emptyString;
-        informationPopup.text  = qsTr("Please check your wallet and daemon log for errors. You can also try to start %1 manually.").arg((isWindows)? "monerod.exe" : "monerod")
+        informationPopup.text  = qsTr("Please check your wallet and daemon log for errors. You can also try to start %1 manually.").arg((isWindows)? "francd.exe" : "francd")
         informationPopup.icon  = StandardIcon.Critical
         informationPopup.onCloseCallback = null
         informationPopup.open();
