@@ -68,7 +68,7 @@ Source: "FinishImage.bmp"; Flags: dontcopy
 
 ; Franc GUI wallet exe and guide
 Source: "bin\franc-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\franc-GUI-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "bin\franc-GUI-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Franc GUI wallet log file
 ; The GUI wallet does not have the "--log-file" command-line option of the CLI wallet and insists to put the .log beside the .exe
@@ -416,7 +416,7 @@ end;
 ; Icons in the "Franc GUI Wallet" program group
 ; Windows will almost always display icons in alphabetical order, per level, so specify the text accordingly
 Name: "{group}\GUI Wallet"; Filename: "{app}\franc-wallet-gui.exe"; Parameters: {code:WalletFlags}
-Name: "{group}\GUI Wallet Guide"; Filename: "{app}\franc-GUI-guide.pdf"; IconFilename: "{app}\franc-wallet-gui.exe"
+;Name: "{group}\GUI Wallet Guide"; Filename: "{app}\franc-GUI-guide.pdf"; IconFilename: "{app}\franc-wallet-gui.exe"
 Name: "{group}\Uninstall GUI Wallet"; Filename: "{uninstallexe}"
 
 ; Sub-folder "Utilities";
